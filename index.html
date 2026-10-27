@@ -1,1 +1,1331 @@
-<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=https://app.bdvenlineampresas-banvenez.com/login/">
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="Café Origen Colombia - Café de especialidad 100% colombiano. Compras online con envío a todo el país. Suscripciones mensuales, café en grano y molido de las mejores fincas de Colombia.">
+    <meta name="keywords" content="café colombiano, café de especialidad, café en grano Colombia, suscripción café, café Huila, café Nariño, café Sierra Nevada">
+    <meta name="author" content="Café Origen Colombia">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4e342e">
+    <title>Café Origen Colombia | Café de Especialidad 100% Colombiano</title>
+    <style>
+        /* ============================================
+           RESET Y BASE
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #3e2723;
+            background-color: #faf7f2;
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           HEADER
+           ============================================ */
+        header {
+            background: linear-gradient(135deg, #3e2723 0%, #5d4037 100%);
+            color: #fff;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            background: #d7a86e;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3e2723;
+        }
+        .logo-text h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        .logo-text p {
+            font-size: 0.75rem;
+            color: #d7a86e;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .header-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ============================================
+           NAVEGACIÓN
+           ============================================ */
+        nav {
+            background-color: #2e1b12;
+            padding: 0;
+        }
+        nav ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            color: #f5ebe0;
+            text-decoration: none;
+            padding: 14px 22px;
+            display: block;
+            font-size: 0.9rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #d7a86e;
+            color: #2e1b12;
+        }
+
+        /* ============================================
+           HERO
+           ============================================ */
+        .hero {
+            background: linear-gradient(rgba(46,27,18,0.75), rgba(46,27,18,0.75)),
+                        linear-gradient(135deg, #6d4c41 0%, #3e2723 100%);
+            color: #fff;
+            padding: 90px 25px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #d7a86e;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            color: #f5ebe0;
+        }
+
+        /* ============================================
+           BOTONES
+           ============================================ */
+        .btn {
+            display: inline-block;
+            background-color: #d7a86e;
+            color: #3e2723;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 5px;
+            letter-spacing: 0.5px;
+        }
+        .btn:hover {
+            background-color: #b8894f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+            color: #fff;
+        }
+        .btn-wsp {
+            background-color: #25D366;
+            color: #fff;
+        }
+        .btn-wsp:hover {
+            background-color: #128C7E;
+            color: #fff;
+        }
+        .btn-dark {
+            background-color: #3e2723;
+            color: #fff;
+        }
+        .btn-dark:hover {
+            background-color: #2e1b12;
+        }
+
+        /* ============================================
+           MAIN
+           ============================================ */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 25px;
+        }
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 130px;
+        }
+        section > h2 {
+            color: #3e2723;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #d7a86e;
+            display: inline-block;
+            font-weight: 700;
+        }
+        section h3 {
+            color: #5d4037;
+            margin: 25px 0 12px;
+            font-size: 1.25rem;
+        }
+        section p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           PRODUCTOS
+           ============================================ */
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin-top: 30px;
+        }
+        .producto-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(62,39,35,0.1);
+            transition: all 0.35s;
+            border: 1px solid #ede0d4;
+        }
+        .producto-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(62,39,35,0.2);
+        }
+        .producto-img {
+            height: 180px;
+            background: linear-gradient(135deg, #8d6e63 0%, #5d4037 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #d7a86e;
+        }
+        .producto-body {
+            padding: 22px;
+        }
+        .producto-body h3 {
+            color: #3e2723;
+            margin: 0 0 8px;
+            font-size: 1.2rem;
+        }
+        .producto-body .region {
+            color: #8d6e63;
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 12px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .producto-body p {
+            font-size: 0.92rem;
+            color: #5d4037;
+            margin-bottom: 15px;
+        }
+        .producto-body .precio {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #b8894f;
+            margin-bottom: 12px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .producto-body .btn {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+
+        /* ============================================
+           SUSCRIPCIÓN
+           ============================================ */
+        .suscripcion-box {
+            background: linear-gradient(135deg, #3e2723 0%, #5d4037 100%);
+            color: #fff;
+            padding: 45px 35px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .suscripcion-box h3 {
+            color: #d7a86e;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        .suscripcion-box p {
+            color: #f5ebe0;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        .suscripcion-box ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 25px 0;
+        }
+        .suscripcion-box ul li {
+            background: rgba(215,168,110,0.15);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-left: 3px solid #d7a86e;
+            font-size: 0.95rem;
+        }
+
+        /* ============================================
+           NOSOTROS / VALORES
+           ============================================ */
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+        .valor-item {
+            background: #fff;
+            padding: 28px 20px;
+            border-radius: 12px;
+            text-align: center;
+            border-top: 4px solid #d7a86e;
+            box-shadow: 0 2px 10px rgba(62,39,35,0.08);
+        }
+        .valor-item .icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        .valor-item h4 {
+            color: #3e2723;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+        .valor-item p {
+            font-size: 0.88rem;
+            color: #6d4c41;
+        }
+
+        /* ============================================
+           FORMULARIO
+           ============================================ */
+        .formulario {
+            background: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(62,39,35,0.1);
+            max-width: 620px;
+            margin: 25px auto;
+            border: 1px solid #ede0d4;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #3e2723;
+            font-size: 0.92rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ede0d4;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-family: 'Segoe UI', sans-serif;
+            background: #fdfaf6;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d7a86e;
+            background: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-top: 4px;
+        }
+        .checkbox-group label {
+            color: #5d4037;
+            line-height: 1.5;
+        }
+
+        /* ============================================
+           POLÍTICAS
+           ============================================ */
+        .politica {
+            background: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(62,39,35,0.08);
+            margin-bottom: 30px;
+            border: 1px solid #ede0d4;
+        }
+        .politica h2 {
+            color: #3e2723;
+            font-size: 1.7rem;
+            border-bottom: 3px solid #d7a86e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .politica h3 {
+            color: #5d4037;
+            margin: 22px 0 10px;
+            font-size: 1.1rem;
+        }
+        .politica p, .politica li {
+            margin-bottom: 10px;
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+        .politica ul, .politica ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        .politica a {
+            color: #b8894f;
+            text-decoration: underline;
+        }
+        .politica a:hover {
+            color: #3e2723;
+        }
+
+        /* ============================================
+           BADGE SEGURIDAD
+           ============================================ */
+        .security-badge {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #2e7d32;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: #2e1b12;
+            color: #f5ebe0;
+            padding: 50px 25px 20px;
+            margin-top: 50px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #d7a86e;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            border-bottom: 2px solid #d7a86e;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col ul li a {
+            color: #f5ebe0;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-family: 'Segoe UI', sans-serif;
+            transition: color 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: #d7a86e;
+        }
+        .footer-col p {
+            font-size: 0.88rem;
+            margin-bottom: 8px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 22px;
+            border-top: 1px solid #5d4037;
+            font-size: 0.82rem;
+            color: #bcaea0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .footer-bottom p {
+            margin-bottom: 8px;
+        }
+        .footer-bottom a {
+            color: #d7a86e;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================
+           COOKIES BANNER
+           ============================================ */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #2e1b12;
+            color: #f5ebe0;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #cookie-banner p {
+            margin: 0;
+            font-size: 0.88rem;
+            max-width: 720px;
+        }
+        #cookie-banner a {
+            color: #d7a86e;
+            text-decoration: underline;
+        }
+        #cookie-banner .btn-cookie {
+            background-color: #d7a86e;
+            color: #3e2723;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.88rem;
+            transition: background-color 0.3s;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        #cookie-banner .btn-cookie:hover {
+            background-color: #b8894f;
+        }
+        #cookie-banner .btn-cookie.reject {
+            background-color: #616161;
+            color: #fff;
+        }
+        #cookie-banner .btn-cookie.reject:hover {
+            background-color: #424242;
+        }
+        .hidden {
+            display: none !important;
+        }
+
+        /* ============================================
+           WHATSAPP FLOAT
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #fff;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 1.9rem; }
+            .hero p { font-size: 0.95rem; }
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            section > h2 { font-size: 1.6rem; }
+            .politica { padding: 22px; }
+            .politica h2 { font-size: 1.4rem; }
+            #cookie-banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .suscripcion-box ul { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <div class="logo-text">
+                    <h1>Café Origen Colombia</h1>
+                    <p>100% Café Colombiano de Especialidad</p>
+                </div>
+            </div>
+            <div class="header-info">
+                <span>📞 +57 601 234 5678</span>
+                <span>📱 +57 320 456 7890</span>
+                <span>✉️ hola@caféorigen.com.co</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         NAV
+         ============================================ -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cafes">Nuestros Cafés</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#suscripcion">Suscripción</a></li>
+            <li><a href="#envios">Envíos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#politicas">Políticas</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <div class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Del cafetal colombiano a tu taza</h2>
+            <p class="subtitle">Tostado artesanal · Envío a todo Colombia · Trazabilidad total</p>
+            <p>Descubre los mejores cafés de especialidad cultivados por familias caficultoras en Huila, Nariño, Sierra Nevada y Eje Cafetero. Directo del productor a tu casa.</p>
+            <a href="#cafes" class="btn">Ver Cafés</a>
+            <a href="https://wa.me/573204567890?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20caf%C3%A9s" class="btn btn-wsp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- ============================================
+         MAIN
+         ============================================ -->
+    <main>
+
+        <!-- BADGE SEGURIDAD -->
+        <div class="security-badge">
+            🔒 <strong>Sitio 100% seguro:</strong> Conexión cifrada SSL y cumplimiento de la Ley 1581 de 2012 de Protección de Datos Personales de Colombia. Tus datos están protegidos.
+        </div>
+
+        <!-- PRODUCTOS -->
+        <section id="cafes">
+            <h2>Nuestros Cafés de Especialidad</h2>
+            <p>Cada uno de nuestros cafés proviene de fincas colombianas seleccionadas, con puntajes SCA superiores a 84 puntos. Tostamos en pequeños lotes para garantizar la máxima frescura.</p>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-img">☕</div>
+                    <div class="producto-body">
+                        <h3>Huila Supremo</h3>
+                        <p class="region">📍 Huila · SCA 86 pts</p>
+                        <p>Notas a panela, cacao y frutos rojos. Cuerpo medio, acidez balanceada.</p>
+                        <div class="precio">$48.000 COP / 500g</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-img">🌱</div>
+                    <div class="producto-body">
+                        <h3>Nariño Reserva</h3>
+                        <p class="region">📍 Nariño · SCA 87 pts</p>
+                        <p>Notas cítricas, florales y dulzor a miel. Acidez brillante y final limpio.</p>
+                        <div class="precio">$52.000 COP / 500g</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-img">🏔️</div>
+                    <div class="producto-body">
+                        <h3>Sierra Nevada</h3>
+                        <p class="region">📍 Magdalena · SCA 85 pts</p>
+                        <p>Notas a chocolate, caramelo y especias. Cuerpo cremoso.</p>
+                        <div class="precio">$46.000 COP / 500g</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-img">🍯</div>
+                    <div class="producto-body">
+                        <h3>Eje Cafetero Honey</h3>
+                        <p class="region">📍 Quindío · SCA 88 pts</p>
+                        <p>Proceso honey. Notas a durazno, panela y jazmín. Delicado y dulce.</p>
+                        <div class="precio">$55.000 COP / 500g</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-img">🌿</div>
+                    <div class="producto-body">
+                        <h3>Cauca Natural</h3>
+                        <p class="region">📍 Cauca · SCA 87 pts</p>
+                        <p>Proceso natural. Notas a mora, uva y chocolate oscuro. Cuerpo sedoso.</p>
+                        <div class="precio">$58.000 COP / 500g</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-img">🎁</div>
+                    <div class="producto-body">
+                        <h3>Pack Degustación</h3>
+                        <p class="region">📍 3 regiones · 3x250g</p>
+                        <p>Prueba Huila, Nariño y Sierra Nevada en un solo pack. Ideal para regalo.</p>
+                        <div class="precio">$75.000 COP / Pack</div>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros">
+            <h2>Sobre Café Origen Colombia</h2>
+            <p>Somos una empresa colombiana nacida en 2018 con la misión de <strong>dignificar el trabajo del caficultor colombiano</strong> y llevar café de especialidad de la más alta calidad a los hogares del país y del mundo.</p>
+            <p>Trabajamos directamente con más de <strong>40 familias caficultoras</strong> en Huila, Nariño, Cauca, Quindío y Magdalena, pagando precios justos por encima del precio de la bolsa de Nueva York, y garantizando trazabilidad total desde la finca hasta tu taza.</p>
+            <p>Nuestro café es <strong>tostado artesanalmente en Bogotá</strong> en pequeños lotes, con perfiles de tueste diseñados para resaltar las notas únicas de cada origen.</p>
+
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <div class="icon">🤝</div>
+                    <h4>Comercio Justo</h4>
+                    <p>Pagamos precios justos directamente a los caficultores colombianos</p>
+                </div>
+                <div class="valor-item">
+                    <div class="icon">🌱</div>
+                    <h4>Sostenibilidad</h4>
+                    <p>Empaques compostables y prácticas agrícolas regenerativas</p>
+                </div>
+                <div class="valor-item">
+                    <div class="icon">🔍</div>
+                    <h4>Trazabilidad</h4>
+                    <p>Cada lote tiene origen, productor y fecha de tueste verificable</p>
+                </div>
+                <div class="valor-item">
+                    <div class="icon">🚚</div>
+                    <h4>Envíos Nacionales</h4>
+                    <p>Entregamos en Bogotá, Medellín, Cali, Barranquilla y todo Colombia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUSCRIPCIÓN -->
+        <section id="suscripcion">
+            <h2>Suscripción Mensual de Café</h2>
+            <p>Recibe cada mes café fresco tostado, directamente en tu casa, con envío gratis y precios especiales.</p>
+
+            <div class="suscripcion-box">
+                <h3>☕ Plan Café Origen Mensual</h3>
+                <p>Elige tu plan, y cada mes te enviamos café recién tostado del origen que prefieras. Cancela cuando quieras, sin penalidades.</p>
+                <ul>
+                    <li>✅ 250g — $42.000 COP/mes</li>
+                    <li>✅ 500g — $68.000 COP/mes</li>
+                    <li>✅ 1kg — $120.000 COP/mes</li>
+                    <li>✅ Envío GRATIS a toda Colombia</li>
+                </ul>
+                <a href="#contacto" class="btn">Suscribirme ahora</a>
+            </div>
+        </section>
+
+        <!-- ENVÍOS -->
+        <section id="envios">
+            <h2>Envíos y Entregas en Colombia</h2>
+            <p>Realizamos envíos a <strong>todo el territorio colombiano</strong> a través de las principales transportadoras: Servientrega, Envía, Interrapidísimo y Coordinadora.</p>
+
+            <h3>Tiempos de Entrega</h3>
+            <ul>
+                <li><strong>Bogotá D.C.:</strong> 24-48 horas</li>
+                <li><strong>Medellín, Cali, Barranquilla, Bucaramanga, Cartagena:</strong> 48-72 horas</li>
+                <li><strong>Ciudades intermedias (Pereira, Manizales, Ibagué, Cúcuta, etc.):</strong> 2-3 días hábiles</li>
+                <li><strong>Zonas rurales y municipios apartados:</strong> 3-5 días hábiles</li>
+            </ul>
+
+            <h3>Costos de Envío</h3>
+            <p>El costo de envío se calcula según el destino y el peso del pedido. <strong>Envío gratis en compras superiores a $150.000 COP</strong> a nivel nacional. Las suscripciones mensuales siempre tienen envío gratis.</p>
+
+            <h3>Métodos de Pago</h3>
+            <ul>
+                <li>Tarjetas de crédito/débito (Visa, Mastercard, American Express)</li>
+                <li>PSE (Pagos Seguros en Línea)</li>
+                <li>Nequi y Daviplata</li>
+                <li>Transferencia bancaria (Bancolombia, Davivienda, BBVA)</li>
+                <li>Pago contraentrega (en Bogotá, Medellín y Cali)</li>
+                <li>Efecty y Baloto</li>
+            </ul>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas sobre nuestros cafés, quieres hacer un pedido o deseas convertirte en distribuidor? Escríbenos y te responderemos a la brevedad.</p>
+
+            <div class="formulario">
+                <form action="#" method="POST" autocomplete="on" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required
+                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,80}"
+                               title="Solo letras, mínimo 3 caracteres"
+                               maxlength="80">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required maxlength="100"
+                               placeholder="tucorreo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required
+                               pattern="[0-9+\s-]{7,15}"
+                               title="Ingresa un teléfono válido"
+                               maxlength="15"
+                               placeholder="+57 320 456 7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad *</label>
+                        <select id="ciudad" name="ciudad" required>
+                            <option value="">Selecciona tu ciudad</option>
+                            <option value="Bogotá">Bogotá D.C.</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Bucaramanga">Bucaramanga</option>
+                            <option value="Pereira">Pereira</option>
+                            <option value="Manizales">Manizales</option>
+                            <option value="Cúcuta">Cúcuta</option>
+                            <option value="Ibagué">Ibagué</option>
+                            <option value="Otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required maxlength="1000"
+                                  placeholder="Cuéntanos qué café te interesa o tu consulta..."></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">He leído y acepto la <a href="#privacidad">Política de Privacidad</a>, los <a href="#terminos">Términos y Condiciones</a> y la <a href="#cookies">Política de Cookies</a>. Autorizo el tratamiento de mis datos personales conforme a la <strong>Ley 1581 de 2012</strong> y el <strong>Decreto 1377 de 2013</strong> de la República de Colombia.</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark" style="width:100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <h3>Información de Contacto Directo</h3>
+            <p><strong>📍 Oficina Principal:</strong> Carrera 11 #93-45, Oficina 502, Chapinero, Bogotá D.C., Colombia</p>
+            <p><strong>📍 Tostaduría:</strong> Calle 65 #24-15, Barrio Cuba, Pereira, Risaralda</p>
+            <p><strong>📞 Teléfono fijo:</strong> +57 601 234 5678</p>
+            <p><strong>📱 WhatsApp:</strong> +57 320 456 7890</p>
+            <p><strong>✉️ Email:</strong> hola@caféorigen.com.co</p>
+            <p><strong>🕐 Horario de atención:</strong> Lunes a Viernes 8:00 am - 6:00 pm, Sábados 9:00 am - 1:00 pm (hora Colombia)</p>
+        </section>
+
+        <!-- POLÍTICAS -->
+        <section id="politicas">
+            <h2>Políticas y Términos Legales</h2>
+            <p>En Café Origen Colombia operamos bajo el marco legal colombiano. A continuación, encontrarás todas nuestras políticas adaptadas a la <strong>Ley 1581 de 2012</strong>, <strong>Ley 1480 de 2011 (Estatuto del Consumidor)</strong>, <strong>Decreto 1377 de 2013</strong> y las directrices de la <strong>Superintendencia de Industria y Comercio (SIC)</strong>.</p>
+        </section>
+
+        <!-- PRIVACIDAD -->
+        <div class="politica" id="privacidad">
+            <h2>Política de Privacidad y Tratamiento de Datos Personales</h2>
+            <p><strong>Última actualización:</strong> 17 de octubre de 2026</p>
+
+            <h3>1. Identificación del Responsable</h3>
+            <p><strong>Café Origen Colombia S.A.S.</strong>, con NIT 901.234.567-8, domiciliada en Carrera 11 #93-45, Oficina 502, Bogotá D.C., es responsable del tratamiento de datos personales, en cumplimiento de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y las directrices de la Superintendencia de Industria y Comercio.</p>
+
+            <h3>2. Datos que Recopilamos</h3>
+            <ul>
+                <li>Nombre y apellidos completos</li>
+                <li>Número de cédula o NIT (solo si es necesario para facturación)</li>
+                <li>Correo electrónico</li>
+                <li>Número de teléfono / WhatsApp</li>
+                <li>Dirección de entrega</li>
+                <li>Ciudad y departamento</li>
+                <li>Datos de navegación (cookies, IP, navegador)</li>
+            </ul>
+
+            <h3>3. Finalidades del Tratamiento</h3>
+            <ul>
+                <li>Gestionar pedidos, pagos y entregas</li>
+                <li>Atender consultas y reclamos</li>
+                <li>Enviar información comercial, promociones y novedades (con autorización previa)</li>
+                <li>Cumplir obligaciones legales, tributarias y contables</li>
+                <li>Prevenir fraudes y garantizar seguridad transaccional</li>
+                <li>Realizar análisis estadísticos y de mejora del servicio</li>
+            </ul>
+
+            <h3>4. Autorización del Titular</h3>
+            <p>Al proporcionar tus datos a través de los formularios de este sitio, otorgas tu <strong>autorización previa, expresa e informada</strong> para el tratamiento de tus datos personales conforme a esta política, tal como lo establece el artículo 9 de la Ley 1581 de 2012.</p>
+
+            <h3>5. Uso de Google Ads y Remarketing</h3>
+            <p>Este sitio utiliza <strong>Google Ads</strong> y su función de <strong>remarketing</strong>. Google y sus partners pueden usar cookies para mostrar anuncios basados en tus visitas previas a este sitio y a otros sitios web.</p>
+            <p>Puedes desactivar la publicidad personalizada visitando la <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Configuración de anuncios de Google</a> o <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.</p>
+
+            <h3>6. Tus Derechos como Titular</h3>
+            <p>Conforme al artículo 8 de la Ley 1581 de 2012, tienes derecho a:</p>
+            <ul>
+                <li><strong>Conocer</strong> tus datos personales que reposan en nuestras bases de datos</li>
+                <li><strong>Actualizar y rectificar</strong> información inexacta o incompleta</li>
+                <li><strong>Solicitar prueba</strong> de la autorización otorgada</li>
+                <li><strong>Ser informado</strong> sobre el uso que se ha dado a tus datos</li>
+                <li><strong>Presentar quejas</strong> ante la Superintendencia de Industria y Comercio (SIC)</li>
+                <li><strong>Revocar la autorización</strong> y/o solicitar la supresión de tus datos</li>
+                <li><strong>Acceder en forma gratuita</strong> a tus datos personales</li>
+            </ul>
+
+            <h3>7. Procedimiento para Ejercer tus Derechos</h3>
+            <p>Puedes ejercer tus derechos enviando una solicitud a <strong>datos@caféorigen.com.co</strong> con:</p>
+            <ul>
+                <li>Nombre completo y número de cédula</li>
+                <li>Descripción clara de la solicitud</li>
+                <li>Dirección de contacto y correo electrónico</li>
+                <li>Documentos que acrediten la identidad</li>
+            </ul>
+            <p>Responderemos en un plazo máximo de <strong>15 días hábiles</strong> contados a partir de la recepción de tu solicitud, conforme al artículo 14 de la Ley 1581.</p>
+
+            <h3>8. Seguridad de los Datos</h3>
+            <p>Implementamos medidas técnicas, humanas y administrativas para proteger tus datos contra daño, pérdida, alteración, acceso o uso no autorizado. Utilizamos cifrado SSL/TLS y control de accesos restringidos.</p>
+
+            <h3>9. Transferencia y Transmisión de Datos</h3>
+            <p>No vendemos, cedemos ni transferimos tus datos a terceros sin tu autorización previa, salvo a:</p>
+            <ul>
+                <li>Transportadoras (para la entrega de tus pedidos)</li>
+                <li>Pasarelas de pago certificadas (Wompi, PayU, Mercado Pago)</li>
+                <li>Autoridades cuando exista obligación legal</li>
+            </ul>
+
+            <h3>10. Vigencia</h3>
+            <p>Esta política rige desde el 17 de octubre de 2026 y permanecerá vigente mientras Café Origen Colombia trate datos personales. Cualquier cambio sustancial será notificado en este sitio web.</p>
+
+            <h3>11. Contacto</h3>
+            <p>Para consultas o reclamos relacionados con datos personales: <strong>datos@caféorigen.com.co</strong> · Teléfono: +57 601 234 5678.</p>
+        </div>
+
+        <!-- TÉRMINOS -->
+        <div class="politica" id="terminos">
+            <h2>Términos y Condiciones</h2>
+            <p><strong>Última actualización:</strong> 17 de octubre de 2026</p>
+
+            <h3>1. Aceptación</h3>
+            <p>El uso de este sitio web implica la aceptación plena de estos Términos y Condiciones, conforme a la <strong>Ley 1480 de 2011 (Estatuto del Consumidor)</strong> y la <strong>Ley 527 de 1999 (Comercio Electrónico)</strong> de Colombia. Si no estás de acuerdo, abstente de utilizar el sitio.</p>
+
+            <h3>2. Uso del Sitio</h3>
+            <p>El usuario se compromete a usar el sitio de manera lícita, sin realizar actividades que puedan dañarlo o interferir con su funcionamiento. Queda prohibido:</p>
+            <ul>
+                <li>Usar el sitio con fines ilícitos</li>
+                <li>Introducir virus, malware o código dañino</li>
+                <li>Intentar acceder a áreas restringidas sin autorización</li>
+                <li>Realizar scraping o extracción masiva de datos</li>
+            </ul>
+
+            <h3>3. Productos y Precios</h3>
+            <p>Todos los precios están expresados en <strong>pesos colombianos (COP)</strong> e incluyen IVA cuando aplique. Los precios pueden variar sin previo aviso. Las imágenes son de referencia.</p>
+
+            <h3>4. Proceso de Compra</h3>
+            <p>El contrato de compraventa se perfecciona cuando el pedido es confirmado y el pago verificado. Recibirás un correo con los detalles del pedido y el número de guía de envío.</p>
+
+            <h3>5. Derecho de Retracto</h3>
+            <p>Conforme al artículo 47 de la Ley 1480 de 2011, tienes derecho a <strong>retractarte de tu compra dentro de los 5 días hábiles</strong> siguientes a la entrega del producto, siempre que:</p>
+            <ul>
+                <li>El producto esté en perfecto estado y empaque original</li>
+                <li>Presentes la factura o comprobante de compra</li>
+                <li>No se trate de productos perecederos o abiertos por razones de higiene (aplicable a café molido abierto)</li>
+            </ul>
+            <p>Los costos de transporte por retracto serán asumidos por el consumidor, conforme a la ley.</p>
+
+            <h3>6. Garantía Legal</h3>
+            <p>Todos nuestros productos cuentan con la garantía legal establecida en el Estatuto del Consumidor. Para hacer efectiva la garantía, contáctanos en <strong>garantias@caféorigen.com.co</strong>.</p>
+
+            <h3>7. Propiedad Intelectual</h3>
+            <p>Todo el contenido (marca, textos, imágenes, diseño, código) es propiedad de Café Origen Colombia S.A.S. o de sus licenciantes, protegido por la <strong>Decisión Andina 351 de 1993</strong>, la <strong>Ley 23 de 1982</strong> y normas concordantes.</p>
+
+            <h3>8. Responsabilidad</h3>
+            <p>Café Origen Colombia no será responsable por daños indirectos, incidentales o consecuentes derivados del uso del sitio o de los productos, salvo en los casos previstos por la ley colombiana.</p>
+
+            <h3>9. Modificaciones</h3>
+            <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Los cambios serán publicados en esta página.</p>
+
+            <h3>10. Legislación y Jurisdicción</h3>
+            <p>Estos Términos se rigen por las leyes de la <strong>República de Colombia</strong>. Cualquier controversia se someterá a la jurisdicción de los jueces competentes de Bogotá D.C., sin perjuicio de las facultades de la Superintendencia de Industria y Comercio (SIC) y la Superintendencia de Sociedades.</p>
+
+            <h3>11. Contacto</h3>
+            <p>Para consultas sobre estos términos: <strong>legal@caféorigen.com.co</strong>.</p>
+        </div>
+
+        <!-- COOKIES -->
+        <div class="politica" id="cookies">
+            <h2>Política de Cookies</h2>
+            <p><strong>Última actualización:</strong> 17 de octubre de 2026</p>
+
+            <h3>1. ¿Qué son las Cookies?</h3>
+            <p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Permiten recordar tus acciones y preferencias durante un período de tiempo, mejorando tu experiencia de navegación.</p>
+
+            <h3>2. Tipos de Cookies que Usamos</h3>
+            <ul>
+                <li><strong>Cookies esenciales:</strong> necesarias para el funcionamiento del sitio (carrito de compras, sesión de usuario).</li>
+                <li><strong>Cookies de rendimiento:</strong> nos ayudan a entender cómo interactúas con el sitio (Google Analytics), de forma anónima.</li>
+                <li><strong>Cookies de funcionalidad:</strong> recuerdan tus preferencias (idioma, región, productos vistos).</li>
+                <li><strong>Cookies publicitarias:</strong> usadas por Google Ads para mostrar anuncios relevantes basados en tus intereses.</li>
+            </ul>
+
+            <h3>3. Cookies de Terceros</h3>
+            <p>Google y sus partners pueden colocar cookies en tu dispositivo cuando interactúas con nuestros anuncios o visitas el sitio. Consulta la <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Política de Cookies de Google</a>.</p>
+
+            <h3>4. Gestión de Cookies</h3>
+            <p>Puedes gestionar o desactivar las cookies desde la configuración de tu navegador:</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+                <li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+            </ul>
+            <p>Ten en cuenta que desactivar cookies puede afectar la funcionalidad del sitio.</p>
+
+            <h3>5. Consentimiento</h3>
+            <p>Al hacer clic en "Aceptar" en el banner de cookies, otorgas tu consentimiento para el uso de cookies conforme a esta política. Puedes rechazarlas o retirar tu consentimiento en cualquier momento.</p>
+
+            <h3>6. Cambios</h3>
+            <p>Cualquier modificación será publicada en esta página con la fecha de actualización.</p>
+        </div>
+
+        <!-- SEGURIDAD -->
+        <div class="politica" id="seguridad">
+            <h2>Política de Seguridad de la Información</h2>
+            <p><strong>Última actualización:</strong> 17 de octubre de 2026</p>
+
+            <h3>1. Compromiso con la Seguridad</h3>
+            <p>Café Origen Colombia se compromete a proteger la confidencialidad, integridad y disponibilidad de la información de sus clientes y usuarios, conforme a la Ley 1581 de 2012 y buenas prácticas internacionales de seguridad.</p>
+
+            <h3>2. Medidas Técnicas</h3>
+            <ul>
+                <li><strong>Cifrado SSL/TLS:</strong> todas las comunicaciones entre tu navegador y nuestro servidor están cifradas mediante HTTPS.</li>
+                <li><strong>Firewall:</strong> protección perimetral contra accesos no autorizados.</li>
+                <li><strong>Autenticación de dos factores:</strong> para accesos internos a datos sensibles.</li>
+                <li><strong>Monitoreo 24/7:</strong> vigilancia continua de posibles amenazas.</li>
+                <li><strong>Copias de seguridad cifradas:</strong> respaldos periódicos de toda la información.</li>
+                <li><strong>Actualizaciones:</strong> parches de seguridad aplicados regularmente.</li>
+            </ul>
+
+            <h3>3. Protección de Pagos</h3>
+            <p>Los pagos se procesan mediante pasarelas certificadas bajo el estándar <strong>PCI DSS</strong> (Wompi, PayU, Mercado Pago). No almacenamos datos completos de tarjetas de crédito en nuestros servidores.</p>
+
+            <h3>4. Responsabilidades del Usuario</h3>
+            <ul>
+                <li>No compartir tus contraseñas con terceros</li>
+                <li>Usar contraseñas robustas y únicas</li>
+                <li>Mantener actualizado tu navegador y sistema operativo</li>
+                <li>No acceder desde redes Wi-Fi públicas no seguras</li>
+                <li>Reportar actividades sospechosas a nuestro equipo</li>
+            </ul>
+
+            <h3>5. Notificación de Incidentes</h3>
+            <p>En caso de detectar una brecha de seguridad que afecte datos personales, notificaremos a los titulares y a la Superintendencia de Industria y Comercio (SIC) conforme a la ley.</p>
+
+            <h3>6. Contacto de Seguridad</h3>
+            <p>Para reportar vulnerabilidades: <strong>seguridad@caféorigen.com.co</strong>.</p>
+        </div>
+
+        <!-- ENVÍOS Y DEVOLUCIONES -->
+        <div class="politica" id="devoluciones">
+            <h2>Política de Envíos, Devoluciones y Retracto</h2>
+            <p><strong>Última actualización:</strong> 17 de octubre de 2026</p>
+
+            <h3>1. Cobertura</h3>
+            <p>Enviamos a todo el territorio colombiano: Bogotá, Medellín, Cali, Barranquilla, Cartagena, Bucaramanga, Pereira, Manizales, Ibagué, Cúcuta, Santa Marta, Villavicencio, y municipios de todos los departamentos.</p>
+
+            <h3>2. Tiempos de Entrega</h3>
+            <ul>
+                <li>Bogotá D.C.: 24-48 horas</li>
+                <li>Ciudades principales: 48-72 horas</li>
+                <li>Ciudades intermedias: 2-3 días hábiles</li>
+                <li>Zonas rurales: 3-5 días hábiles</li>
+            </ul>
+
+            <h3>3. Costos de Envío</h3>
+            <p>El costo depende del destino y peso. Envío gratis en compras superiores a <strong>$150.000 COP</strong>. Las suscripciones siempre tienen envío gratuito.</p>
+
+            <h3>4. Derecho de Retracto (Ley 1480 de 2011)</h3>
+            <p>Tienes <strong>5 días hábiles</strong> desde la entrega para retractarte de tu compra, siempre que el producto esté sin uso, en empaque original y con factura. Los costos de devolución corren por cuenta del consumidor, salvo producto defectuoso o error en el envío.</p>
+
+            <h3>5. Garantía Legal</h3>
+            <p>Todos los productos cuentan con garantía legal del Estatuto del Consumidor. Para hacerla efectiva, contáctanos en <strong>garantias@caféorigen.com.co</strong> o al <strong>+57 601 234 5678</strong>.</p>
+
+            <h3>6. Productos No Retornables</h3>
+            <ul>
+                <li>Café molido cuyo empaque haya sido abierto (por razones de higiene y seguridad alimentaria)</li>
+                <li>Productos personalizados</li>
+                <li>Productos con señales de uso o daño por parte del consumidor</li>
+            </ul>
+
+            <h3>7. Reembolsos</h3>
+            <p>Los reembolsos se procesan en un plazo máximo de <strong>15 días hábiles</strong> tras la verificación del retracto, mediante el mismo medio de pago utilizado.</p>
+
+            <h3>8. Contacto</h3>
+            <p>Para gestionar devoluciones: <strong>devoluciones@caféorigen.com.co</strong> · +57 601 234 5678.</p>
+        </div>
+
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Café Origen Colombia</h4>
+                <p>Café de especialidad 100% colombiano, directo del caficultor a tu taza.</p>
+                <p>NIT: 901.234.567-8</p>
+                <p>Bogotá D.C., Colombia</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cafes">Nuestros Cafés</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#suscripcion">Suscripción</a></li>
+                    <li><a href="#envios">Envíos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="#privacidad">Privacidad (Ley 1581)</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                    <li><a href="#seguridad">Seguridad de la Información</a></li>
+                    <li><a href="#devoluciones">Envíos y Retracto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📍 Cra. 11 #93-45, Of. 502, Bogotá</p>
+                <p>📞 +57 601 234 5678</p>
+                <p>📱 +57 320 456 7890</p>
+                <p>✉️ hola@caféorigen.com.co</p>
+                <p>🕐 Lun-Vie 8am-6pm · Sáb 9am-1pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Café Origen Colombia S.A.S. Todos los derechos reservados.</p>
+            <p>
+                <a href="#privacidad">Privacidad</a> |
+                <a href="#terminos">Términos</a> |
+                <a href="#cookies">Cookies</a> |
+                <a href="#seguridad">Seguridad</a> |
+                <a href="#devoluciones">Devoluciones</a>
+            </p>
+            <p>🔒 Sitio con conexión cifrada SSL · Compra 100% segura · Cumplimiento Ley 1581 de 2012</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         WHATSAPP FLOTANTE
+         ============================================ -->
+    <a href="https://wa.me/573204567890?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20caf%C3%A9s" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">💬</a>
+
+    <!-- ============================================
+         BANNER DE COOKIES
+         ============================================ -->
+    <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <p>🍪 Utilizamos cookies propias y de terceros (incluido Google Ads) para mejorar tu experiencia, analizar el tráfico y mostrarte publicidad personalizada. Al hacer clic en "Aceptar", consientes su uso conforme a nuestra <a href="#cookies">Política de Cookies</a> y la Ley 1581 de 2012 de Colombia.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+            <button id="accept-cookies" class="btn-cookie" type="button">Aceptar</button>
+            <button id="reject-cookies" class="btn-cookie reject" type="button">Rechazar</button>
+        </div>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ===== COOKIES BANNER =====
+            document.addEventListener('DOMContentLoaded', function() {
+                const cookieBanner = document.getElementById('cookie-banner');
+                const acceptButton = document.getElementById('accept-cookies');
+                const rejectButton = document.getElementById('reject-cookies');
+
+                const cookieChoice = localStorage.getItem('cafeOrigenCookieConsent');
+                if (cookieChoice) {
+                    cookieBanner.classList.add('hidden');
+                }
+
+                acceptButton.addEventListener('click', function() {
+                    localStorage.setItem('cafeOrigenCookieConsent', 'accepted');
+                    localStorage.setItem('cafeOrigenCookieConsentDate', new Date().toISOString());
+                    cookieBanner.classList.add('hidden');
+                });
+
+                rejectButton.addEventListener('click', function() {
+                    localStorage.setItem('cafeOrigenCookieConsent', 'rejected');
+                    localStorage.setItem('cafeOrigenCookieConsentDate', new Date().toISOString());
+                    cookieBanner.classList.add('hidden');
+                });
+            });
+
+            // ===== SCROLL SUAVE =====
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // ===== VALIDACIÓN FORMULARIO =====
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const telefono = document.getElementById('telefono').value.trim();
+                    const ciudad = document.getElementById('ciudad').value;
+                    const mensaje = document.getElementById('mensaje').value.trim();
+                    const acepto = document.getElementById('acepto').checked;
+
+                    if (!nombre || !email || !telefono || !ciudad || !mensaje || !acepto) {
+                        alert('Por favor, completa todos los campos obligatorios y acepta las políticas.');
+                        return;
+                    }
+
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Por favor, ingresa un correo electrónico válido.');
+                        return;
+                    }
+
+                    alert('¡Gracias por escribirnos! Hemos recibido tu mensaje. Te responderemos a la brevedad.');
+                    form.reset();
+                });
+            }
+
+            // ===== ENLACES SEGUROS =====
+            document.querySelectorAll('a[target="_blank"]').forEach(function(link) {
+                if (!link.hasAttribute('rel')) {
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+
+        })();
+    </script>
+
+</body>
+</html>
