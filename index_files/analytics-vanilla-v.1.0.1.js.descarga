@@ -1,0 +1,450 @@
+/**
+ *
+ * GA Lib JS Vanilla
+ * @version 1.0.1 (2019-10-01)
+ *
+ * @author Lucas Domingues (Accenture Interactive)
+ * @author Diego Riccio (Accenture Interactive)
+ *
+ * 
+ * To initialize this library, add the following snippet into the <head> section of your website and after datalayer variable.
+ * 
+    <script>
+        (function (w, d, b, l, c) {
+            w[l] = function(){};
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = "analytics-vanilla-v.1.0.0.js";
+            s.onload = function(){w[l].init(c);};
+            d[b].appendChild(s);
+        })(window, document, 'head', 'analyticsLib', {
+            gtmContainerId: 'GTM-XXXXXXX'
+        });
+    </script>
+ * 
+*/
+
+var analyticsLib = (function(w) {
+
+    'use strict';
+
+    var adobeDataLayerName = 'analyticsData',
+        debug = false,
+        debugColor = 'font-weight: bold; color: red',
+        gtmContainerId,
+        autoTrackState = true;
+
+    var listClassification = [
+        'site.platformdetails',
+        'site.applicationdetails',
+        'visitor.customerdetails',
+        'visitor.elegibility',
+        'transaction.details',
+        'custom.logintype',
+        'custom.surveyscore',
+        'custom.whatevervariable'
+    ];
+
+    var adobeToGoole = {
+        'site.vrsid': 'site.channel',
+        'site.assessibility': 'site.accessibility',
+        'site.assessibilitystatus': 'site.accessibility',
+        'site.activatedpermissions': 'site.permissions',
+        'site.platform': 'site.developmenttype',
+        'site.platformdetails.AM': 'site.environment',
+        'site.platformdetails.VA': 'site.environment',
+        'site.platformdetails.UA': 'site.useragent',
+        'site.applicationdetails.AG': 'visitor.agencystoreid',
+        'visitor.customerid': 'visitor.client.idpf',
+        'visitor.companyid': 'visitor.client.idpjcompany',
+        'visitor.companyoperator': 'visitor.client.idpjoperator',
+        'visitor.customerdetails.TP': 'visitor.client.accounttype',
+        'visitor.customerdetails.AG': 'visitor.client.agency',
+        'visitor.customersegment': 'visitor.client.commercialsegment',
+        'visitor.customerdetails.FF': 'visitor.client.declaredincomerange',
+        'visitor.customerdetails.LM': 'visitor.client.limitusage',
+        'visitor.customerdetails.PPC': 'visitor.client.loannearduedate',
+        'visitor.customerdetails.RA': 'visitor.client.occupation',
+        'visitor.customerdetails.PERF': 'visitor.client.profile',
+        'visitor.customerdetails.PP': 'visitor.client.rewardsprogram',
+        'visitor.customerdetails.SCR': 'visitor.client.score',
+        'visitor.customerdetails.EST': 'visitor.client.stars',
+        'visitor.customerdetails.CTT': 'visitor.client.titularitycode',
+        'visitor.customerdetails.SE': 'visitor.client.type',
+        'visitor.elegibility.PA': 'visitor.client.elegibility',
+        'visitor.storeid': 'visitor.agencystoreid',
+        'transaction.details.CTB': 'transaction.details.bonusinstallments',
+        'transaction.details.VR': 'transaction.details.cardcategory',
+        'transaction.details.LMT': 'transaction.details.cardlimitrange',
+        'transaction.details.BD': 'transaction.details.cardnetwork',
+        'transaction.details.PT': 'transaction.details.cardpartner',
+        'transaction.details.DCP': 'transaction.details.cardpurchaselimitrange',
+        'transaction.details.DEF': 'transaction.details.cardwithdrawallimitrange',
+        'transaction.details.CAN': 'transaction.details.chosenchannel',
+        'transaction.details.PTS': 'transaction.details.clientrewardsvaluerange',
+        'transaction.details.CUR': 'transaction.details.currency',
+        'transaction.details.ACR': 'transaction.details.daystoinvoiceclosure',
+        'transaction.details.TCD': 'transaction.details.destinationaccounttype',
+        'transaction.details.BCD': 'transaction.details.destinationbank',
+        'transaction.details.PLZ': 'transaction.details.installmentsterm',
+        'transaction.details.CT': 'transaction.details.installmentsterm',
+        'transaction.details.LMP': 'transaction.details.loanlimitrange',
+        'transaction.details.PAO': 'transaction.details.offeredlimitincreaserange',
+        'transaction.details.TCO': 'transaction.details.originaccounttype',
+        'transaction.details.MDP': 'transaction.details.paymentmethod',
+        'transaction.details.CAT': 'transaction.details.productcategory',
+        'transaction.details.DP': 'transaction.details.productdetails',
+        'transaction.details.PAS': 'transaction.details.requestedlimitincreaserange',
+        'transaction.details.TS': 'transaction.details.tax',
+        'transaction.details.INST': 'transaction.details.transactioninstitution',
+        'transaction.details.STS': 'transaction.details.transactionstatus',
+        'transaction.details.PVJ': 'transaction.details.travelnoticedestinationcountry',
+        'transaction.details.FVI': 'transaction.details.travelnoticeinbounddate',
+        'transaction.details.FVR': 'transaction.details.travelnoticeoutbounddate',
+        'custom.partnerid': 'custom.confirmationid',
+        'custom.internalid': 'custom.leadid',
+        'custom.logintype.TA': 'custom.login.authenticationtype',
+        'custom.logintype.TL': 'custom.login.type',
+        'custom.surveyscore.RE': 'custom.survey.results',
+        'custom.surveyscore.TG': 'custom.survey.tag',
+        'custom.surveyscore.TP': 'custom.survey.type',
+        'custom.whatevervariable.MSG': 'custom.message'
+    };
+
+    var init = function (config) {
+        try {
+
+            // Valores de configuração definidos no import da Lib
+            if ('object' === typeof config) {
+                config['adobeDataLayerName'] === undefined || (adobeDataLayerName = config['adobeDataLayerName']);
+                config['debug'] === undefined || (debug = config['debug']);
+                config['debugColor'] === undefined || (debugColor = config['debugColor']);
+                config['gtmContainerId'] === undefined || (gtmContainerId = config['gtmContainerId']);
+                config['autoTrackState'] === undefined || (autoTrackState = config['autoTrackState']);
+            }
+
+            // Google Tag Manager
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer', gtmContainerId);
+
+            // DataLayer padrão Adobe
+            w[adobeDataLayerName] = w[adobeDataLayerName] || {};
+
+            // DataLayer padrão Google
+            w['dataLayer'] = w['dataLayer'] || [];
+
+            // Disparo do pageView
+            autoTrackState && trackState();
+
+
+        } catch(e) {
+            debug && console.log('%cAnalytics - init - Error', debugColor, e);
+        }
+
+        // Remove a função init do escopo global, para evitar uma reinicialização
+        setTimeout(function(){ try{ delete w['analyticsLib'].init; } catch(e) {} },0)
+    };
+
+    // Realiza o envio dos pageviews
+    var trackState = function (pageName, custom) {
+        try {
+
+            pageName && setData("page.name", pageName);
+            custom && setData("custom", custom);
+            (w[adobeDataLayerName].page && w[adobeDataLayerName].page.url) || setData("page.url", document.location.href);
+            setData("rule", "pageLoad");
+            dataLayerParser();
+
+            if (debug) {
+                console.log('%cAnalytics - trackState - pageName: ', debugColor, w[adobeDataLayerName].page.name);
+                console.log('%cAnalytics - trackState - pageUrl: ', debugColor, w[adobeDataLayerName].page.url);
+                console.log('%cAnalytics - trackState - custom: ', debugColor, w[adobeDataLayerName].custom);
+            }
+
+            // Reset Data Layer
+            w['google_tag_manager'] && w['google_tag_manager'][gtmContainerId].dataLayer.reset();
+
+            // Trigger do GTM
+            w['dataLayer'].push({
+              'event': 'async_content_load', 
+              'analyticsData': JSON.parse(JSON.stringify(w[adobeDataLayerName]))
+            });
+
+            // Clean not Required dataLayer Variables
+            setData('transaction', {});
+            setData('custom', {});
+            setData('ecommerce', {});
+
+        } catch(e) {
+            debug && console.log('%cAnalytics - trackState - Error', debugColor, e);
+        }
+    };
+
+    // Realiza o envio dos eventos
+    var trackAction = function (custom) {
+        try {
+
+            custom && setData("custom", custom);
+            setData("rule", "customLink");
+            dataLayerParser();
+            debug && console.log('%cAnalytics - trackAction: ', debugColor, w[adobeDataLayerName].custom);
+
+            // Fallback para os Eventos
+            var componentclicked = 
+                w[adobeDataLayerName].custom.componentclicked || 
+                w[adobeDataLayerName].custom.ComponentClicked || 
+                w[adobeDataLayerName].custom.actioninfo;
+
+            if ( componentclicked ) {
+                w[adobeDataLayerName].custom.customCategory = componentclicked.match(/(MO:+)([^|]*)/)[2] +
+                    '|' + componentclicked.match(/(TP:+)([^|]*)/)[2] +
+                    '|' + componentclicked.match(/(PO:+)([^|]*)/)[2];
+                w[adobeDataLayerName].custom.customAction = componentclicked.match(/(AC:+)([^|]*)/)[2];
+                w[adobeDataLayerName].custom.customLabel = componentclicked.match(/(ID:+)([^|]*)/)[2];
+            } 
+
+            // Define se não é um hit de interação
+            if ( !custom.hasOwnProperty('noninteractionhit') && isNonInteractionHit(custom.customAction) ) {
+                setData("custom.events.noninteractionhit", 1);
+            }
+
+            // Reset Data Layer
+            w['google_tag_manager'] && w['google_tag_manager'][gtmContainerId].dataLayer.reset();
+
+            // Trigger do GTM
+            w['dataLayer'].push({
+              'event': 'async_content_load', 
+              'analyticsData': JSON.parse(JSON.stringify(w[adobeDataLayerName]))
+            });
+
+            // Clean not Required dataLayer Variables
+            setData('transaction', {});
+            setData('custom', {});
+            setData('ecommerce', {});
+
+        } catch(e) {
+            debug && console.log('%cAnalytics - trackAction - Error', debugColor, e);
+        }
+    };
+
+    /* ============================================================================= */
+    /*** Funções auxiliares
+    /* ============================================================================= */
+
+    var isNonInteractionHit = function(action) {
+
+        /**
+         * Identifica se o Evento deve ser considerado interação ou não
+         * @param action: Ação do evento
+         */
+
+        try {
+
+            // Lista de ações que não são consideredados por padrão interação
+            var listNonInteractionHit = [
+                'Show'
+            ];
+
+            return listNonInteractionHit.indexOf(action) !== -1 ? true : false;
+
+        } catch(e) {
+            debug && console.log('%cAnalytics - isNonInteractionHit - Error', debugColor, e);
+        }
+    };
+
+    var getTimeStamp = function() {
+
+        /**
+         * Gera um timeStamp no formado ISO string
+         */
+
+        try {
+            var now = new Date(),
+                tzo = -now.getTimezoneOffset(),
+                dif = tzo >= 0 ? '+' : '-';
+
+            var pad = function(num) {
+                var norm = Math.abs(Math.floor(num));
+                return (norm < 10 ? '0' : '') + norm;
+            };
+
+            return now.getFullYear() 
+                + '-' + pad(now.getMonth()+1)
+                + '-' + pad(now.getDate())
+                + 'T' + pad(now.getHours())
+                + ':' + pad(now.getMinutes()) 
+                + ':' + pad(now.getSeconds())
+                + '.' + pad(now.getMilliseconds())
+                + dif + pad(tzo / 60) 
+                + ':' + pad(tzo % 60);
+
+        } catch (e) {
+            debug && console.log('%cAnalytics - getTimeStamp - Error', debugColor, e);
+        }
+    }
+
+    function hasProp(obj, propPath, i) {
+
+        /**
+         * Verifica se uma propriedade ou propriedades filhas existem
+         */
+
+        try {
+
+            if (typeof(i) === 'undefined' && !(i=0)) { propPath = propPath.split('.'); }
+            if (typeof(obj[propPath[i]]) !== 'undefined') {
+                return (++i && i !== propPath.length) ? hasProp(obj[propPath[i - 1]], propPath, i) : true;
+            }
+            return false;
+
+        } catch (e) {
+            debug && console.log('%cAnalytics - hasProp - Error', debugColor, e);
+        }
+    };
+
+    var dataLayerParser = function() {
+
+        /**
+         * Realiza todas conversões para deixar as implementações Adobe no formato Google configurado no GTM
+         * e faz o push no dataLayer
+         */
+
+        // Transforma o array dos eventos Adobe (chave "events") em parâmetros de um objeto (chave: valor)
+        try {
+
+            var events = w[adobeDataLayerName].custom ? w[adobeDataLayerName].custom.events : undefined;
+
+            if (events && events.length > 0) {
+                var objEvents = {},
+                    eventsLength = events.length;
+
+                for (var i = 0; i < eventsLength; i++) {
+                    objEvents[events[i].split('=')[0]] = events[i].split('=')[1] || '1';
+                }
+
+                w[adobeDataLayerName].custom.events = objEvents;
+            }
+
+        } catch (e) {
+            debug && console.log("Ocorreu um erro na conversão dos Eventos: " + e); 
+        }
+
+
+        try {
+
+            var classificationValue,
+                listClassificationLength = listClassification.length,
+                itemsClassification,
+                itemsClassificationLength,
+                classPairArr;
+
+            for (var i = 0; i < listClassificationLength; i++) {
+
+                try { classificationValue = eval(adobeDataLayerName + '.' + listClassification[i]).replace(/(^\|)|(\|$)/g,"");} catch(e) {}
+
+                if ( classificationValue ) {
+                    setData(listClassification[i], {});
+
+                    itemsClassification = classificationValue.split("|");
+                    itemsClassificationLength = itemsClassification.length;
+
+                    for (var ii = 0; ii < itemsClassificationLength; ii++) {
+                        classPairArr = itemsClassification[ii].split(":");
+                        adobeToGoole[(listClassification[i] + "." + classPairArr[0])] &&
+                            setData(adobeToGoole[(listClassification[i] + "." + classPairArr[0])], classPairArr[1]);
+                    }
+
+                }
+
+                classificationValue = undefined;
+
+            }
+
+        } catch(e) { 
+            debug && console.log("Ocorreu um erro ao converter as dimensões antigas com classifications: " + e) 
+        }
+
+        for ( var prop in adobeToGoole ) {
+            try {
+                if ( adobeToGoole.hasOwnProperty(prop) ) {
+                    eval(adobeDataLayerName + '.' + prop) &&
+                        setData(adobeToGoole[prop], eval(adobeDataLayerName + '.' + prop));
+                } 
+            } catch (e) {
+                // Não ativar LOG, pois sempre vai ter um "erro" na função eval
+                // console.log(e) 
+            }
+        }
+
+        // Fallback para antigo classification Survey Response (Feedback/Avaliação)
+        if ( hasProp(w[adobeDataLayerName], 'custom.surveyresponse') ) {
+            try {
+                setData('custom.survey.feedbackname', w[adobeDataLayerName].custom.surveyresponse.match(/(NM:+)([^|]*)/)[2]);
+                setData('custom.survey.questionsandanswers', w[adobeDataLayerName].custom.surveyresponse.match(/(Q([^;]*):+)([^|]*)/)[0]);
+            } catch (e) {
+                debug && console.log("Ocorreu um erro na conversão de Survey Response: " + e); 
+            }
+        }
+
+        // Fallback para Google Hit Timestamp
+        hasProp(w[adobeDataLayerName], 'custom.hittimestamp') || setData('custom.hittimestamp', getTimeStamp());
+
+        // Fallback para GTM Container ID
+        hasProp(w[adobeDataLayerName], 'site.gtmcontainerid') || setData('site.gtmcontainerid', gtmContainerId);
+
+        // Fallback para Google Session ID
+        // Ou usar outra lógica para geração do identificador
+        hasProp(w[adobeDataLayerName], 'visitor.sessionid') || setData('visitor.sessionid', Date.now() + parseInt((Math.random() * 100000000)));
+
+        // Fallback para Google ID (Client ID)
+        // Custom Task via GTM ???
+
+        // Video Tracking vai ficar na LIB ou no GTM ?
+
+    };
+
+    var setData = function (param, value) {
+
+        /**
+         * Atualiza ou insere uma propriedade nova na objeto "analyticsData" (ou objeto nomeado no init da Lib)
+         * @param param: Propriedade a ser alterada/incluida
+         * @param value: Valor da propriedade alterada/incluida
+         */
+
+        var analyticsParam = w[adobeDataLayerName],
+            i,
+            params = param.split('.');
+
+        try {
+            if (param === adobeDataLayerName) {
+                w[adobeDataLayerName] = value;
+                debug && console.log('%cAnalytics - setData: ', debugColor, adobeDataLayerName + ' = ' + JSON.stringify(value));
+                return true;
+            }
+
+            for (i = 0; i < params.length - 1; i++) {
+                if (analyticsParam[params[i]] == undefined) analyticsParam[params[i]] = {};
+                analyticsParam = analyticsParam[params[i]];
+            }
+            analyticsParam[params[i]] = value;
+            debug && console.log('%cAnalytics - setData: ', debugColor, adobeDataLayerName + '.' + param + ' = ' + JSON.stringify(analyticsParam[params[i]]));
+
+        } catch(e) {
+            debug && console.log('%cAnalytics - setData - Error', debugColor, e);
+        }
+    };
+
+    return {
+        // Public functions
+        init: init,
+        trackState: trackState,
+        trackAction: trackAction,
+        setData: setData,
+        adobeDataLayerName: adobeDataLayerName
+    };
+
+})(window);
+

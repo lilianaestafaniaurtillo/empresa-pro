@@ -1,0 +1,71 @@
+﻿
+
+.text-n-12-700 {
+    color: #3B3B3B;
+    font-family: ItauText;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.text-n-12-400 {
+    color: #3B3B3B;
+    font-family: ItauText;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.text-w-12-700 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Itau Display Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+}
+
+.text-w-12-400 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Itau Display Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+}
+
+.text-w-16-700 {
+    color: var(--Action-primary-contrast, #FFF);
+    /* $ids_textStyle_f02_s16_h24_wbd */
+    font-family: ItauText;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--ids_textStyle_f02_s16_h24_wbd_lineHeight); /* 150% */
+}
+
+.text-w-19-700 {
+    color: var(--Action-primary-contrast, #FFF);
+    font-family: ItauText;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 147.368% */
+}
+
+.text-w-20-700 {
+    color: var(--Contrast-On-Brand-on-brand-primary, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* $ids_textStyle_f02_s20_h26_wbd */
+    font-family: ItauText;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+}
+
+

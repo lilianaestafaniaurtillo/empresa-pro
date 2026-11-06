@@ -1,0 +1,376 @@
+﻿let isDropdownOpen = false;
+let loginBtnDesktop = document.getElementById('loginBtnDesktop');
+let loginBtnMobile = document.getElementById('loginBtnMobile');
+let dropdown = document.getElementById('dropdownMenu');
+let overlay = document.getElementById('overlay');
+
+//login
+//function toggleDropdown() {
+//    const dropdown = document.getElementById('dropdownMenu');
+//    const overlay = document.getElementById('overlay');
+
+//    if (isDropdownOpen) {
+//        closeDropdown();
+//    } else {
+//        dropdown.classList.add('active');
+//        overlay.classList.add('active');
+//        isDropdownOpen = true;
+//    }
+//}
+
+//function closeDropdown() {
+//    const dropdown = document.getElementById('dropdownMenu');
+//    const overlay = document.getElementById('overlay');
+
+//    dropdown.classList.remove('active');
+//    overlay.classList.remove('active');
+//    isDropdownOpen = false;
+//}
+
+function switchTab(tab) {
+    const tabPersonas = document.getElementById('tab-personas');
+    const tabEmpresas = document.getElementById('tab-empresas');
+    const formPersonas = document.getElementById('form-personas');
+    const formEmpresas = document.getElementById('form-empresas');
+
+    // Limpiar todas las clases active
+    tabPersonas.classList.remove('active');
+    tabEmpresas.classList.remove('active');
+
+    // Ocultar todos los formularios
+    formPersonas.style.display = 'none';
+    formEmpresas.style.display = 'none';
+
+    // Mostrar el formulario correspondiente y activar el tab
+    if (tab === 'personas') {
+        tabPersonas.classList.add('active');
+        formPersonas.style.display = 'block';
+        cambiarHeader('p');
+        console.log('Tab cambiado a: Para personas');
+    } else if (tab === 'empresas') {
+        tabEmpresas.classList.add('active');
+        formEmpresas.style.display = 'block';
+        cambiarHeader('e');
+        console.log('Tab cambiado a: Para empresas');
+    }
+}
+
+function handleLogin() {
+    const docType = document.getElementById('docType').value;
+    const docNumber = document.getElementById('docNumber').value;
+    const accountType = document.getElementById('accountType').value;
+    const accountNumber = document.getElementById('accountNumber').value;
+
+    if (!docNumber || !accountNumber) {
+        alert('Por favor completa todos los campos');
+        return;
+    }
+
+    // Simular redirección
+    alert(`Redirigiendo para iniciar sesión...\n${docType.toUpperCase()}: ${docNumber}\n${accountType}: ${accountNumber}`);
+    closeDropdown();
+}
+
+function handlePinRequest() {
+    alert('Redirigiendo para solicitar PIN de acceso...');
+    closeDropdown();
+}
+
+function realizarBusqueda() {
+    $("#txt_palabra").val($("#btn-buscar-head").val());
+    consulta_paginas();
+    $("#footer_old").fadeIn('slow');
+    $("#footer_old").removeClass('d-none');
+    $('html, body').animate({
+        scrollTop: $('#footer_old').offset().top
+    }, 500);
+  
+    
+}
+
+function cerrarBusqueda() {
+    $("#footer_old").hide();
+    $('html, body').animate({
+        scrollTop: $('#nav-menu-head').offset().top
+    }, 500); 
+
+}
+
+function handleSearchKeypress(event) {
+    if (event.key === 'Enter') {
+        realizarBusqueda();
+    }
+}
+
+function tipoCuentaChange()
+{
+    if ($('#tipoCuenta').val() == 'cuenta') {
+        $('.div-tarjetas').hide();
+        $('.div-tarjetaOpt').hide();
+        $('.div-cuenta').show();
+    } else {
+        $('.div-cuenta').hide();
+        $('.div-tarjetaOpt').show();
+        $('.div-tarjetas').show();
+        $('.div-amex').hide();
+    }
+}
+
+function tipoCuentaHb() {
+    if ($('#tipoPer').val() == 'p') {        
+        $('#femp').hide();
+        $('#fper').show();
+        customClick({ description: 'PersonasFisicas(Homebanking)' });
+    } else {
+        $('#femp').show();
+        $('#fper').hide();
+        customClick({ description: 'Empresas(Homebanking)' });
+    }
+}
+
+function tipoOperador() {
+    $('#ci_operador').val('');
+    if ($('#TipoDeOperador').val() == 'Operador') {        
+        $('#cioper').show();
+        customClick({ description: 'Operador(24HorasNegocios)' });
+    } else {        
+        $('#cioper').hide();
+        customClick({ description: 'Administrador(24HorasNegocios)' });
+    }
+}
+
+//login
+// Inicializar cuando el DOM esté listo
+
+
+function cambiarHeader(val) {
+    const container = document.getElementById('nav-menu-head');
+    if (val == "p") {
+        $("#nav-menu-head").addClass("personas");
+        $("#nav-menu-head").removeClass("empresas");
+        container.style.backgroundColor = '#FF6200';
+        localStorage.setItem("menu", "p");
+        //$("#menuEmpresas").removeClass("menuShow");
+        //$("#menuPersonas").addClass("menuShow");
+    }
+    else {
+        $("#nav-menu-head").removeClass("personas");
+        $("#nav-menu-head").addClass("empresas");
+        container.style.backgroundColor = '#0A1D4E';
+        localStorage.setItem("menu", "e");
+        //$("#menuEmpresas").addClass("menuShow");
+        //$("#menuPersonas").removeClass("menuShow");
+    }
+}
+// ============================================
+// MANEJO RESPONSIVE DEL MENÚ
+// ============================================
+class ResponsiveNavigation {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.closeOnLinkClick();
+        this.handleResize();
+    }
+
+    closeOnLinkClick() {
+        const links = document.querySelectorAll('.dropdown-item');
+        console.log("closeOnLinkClick")
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    $('#navbarNav').collapse('hide');
+                }
+            });
+        });
+    }
+
+    handleResize() {
+        let resizeTimer;
+
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 768) {
+                    $('.dropdown-menu-custom').removeClass('show');
+                    $('.nav-item.dropdown').removeClass('show');
+                }
+            }, 250);
+        });
+    }
+}
+
+// ============================================
+// LOGIN  - INICIO
+// ============================================
+
+
+
+
+function positionDropdown() {
+ 
+    if (window.innerWidth > 768 && loginBtnDesktop) {
+        const navbarActions = loginBtnDesktop.closest('.navbar-actions-desktop');
+
+        if (navbarActions && dropdown.parentNode !== navbarActions) {
+            navbarActions.appendChild(dropdown);
+        }
+    } else if (window.innerWidth <= 768) {
+        // En móvil, mover al body si no está ahí
+        if (dropdown.parentNode !== document.body) {
+            document.body.appendChild(dropdown);
+        }
+    }
+}
+
+function toggleDropdown() {
+ 
+    console.log('Toggle dropdown - Current state:', isDropdownOpen);
+
+    if (isDropdownOpen) {
+        closeDropdown();
+    } else {
+        positionDropdown();
+        $("#menuEmpresas").removeClass("show");
+        $("#menuPersonas").removeClass("show");
+        $(".empresa").removeClass("show");
+        $(".persona").removeClass("show");
+        dropdown.classList.remove('d-none');
+        dropdown.classList.add('active');
+       // overlay.classList.add('active');
+        isDropdownOpen = true;
+        console.log('Dropdown opened');
+    }
+}
+
+function closeDropdown() {
+    dropdown.classList.add('d-none');
+    dropdown.classList.remove('active');
+    //overlay.classList.remove('active');
+    isDropdownOpen = false;
+    console.log('Dropdown closed');
+}
+
+
+
+// Tabs
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+// Submit login
+const loginSubmitBtn = document.getElementById('loginSubmitBtn');
+if (loginSubmitBtn) {
+    loginSubmitBtn.addEventListener('click', function () {
+        const docType = document.getElementById('docType').value;
+        const docNumber = document.getElementById('docNumber').value;
+        const accountType = document.getElementById('accountType').value;
+        const accountNumber = document.getElementById('accountNumber').value;
+
+        if (!docNumber || !accountNumber) {
+            alert('Por favor completa todos los campos');
+            return;
+        }
+
+        alert(`Redirigiendo para iniciar sesión...\n${docType.toUpperCase()}: ${docNumber}\n${accountType}: ${accountNumber}`);
+        closeDropdown();
+    });
+}
+
+// PIN request
+const pinRequestLink = document.getElementById('pinRequestLink');
+if (pinRequestLink) {
+    pinRequestLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('Redirigiendo para solicitar PIN de acceso...');
+        closeDropdown();
+    });
+}
+
+
+
+// ============================================
+// LOGIN  - FIN
+// ============================================
+
+$(document).ready(function () {
+
+    var menu = "p";
+    //new ServicesCarousel();
+    new ResponsiveNavigation();
+    // Cerrar dropdown al presionar Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isDropdownOpen) {
+            closeDropdown();
+        }
+    });
+
+    // Prevenir que el dropdown se cierre al hacer click dentro de él
+    document.getElementById('dropdownMenu').addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    $('.div-tarjetas').hide();
+    $('.div-tarjetaOpt').hide();
+    //login
+    loginBtnDesktop = document.getElementById('loginBtnDesktop');
+    loginBtnMobile = document.getElementById('loginBtnMobile');
+    dropdown = document.getElementById('dropdownMenu');
+    overlay = document.getElementById('overlay');
+    // Event listeners para botones de login
+    if (loginBtnDesktop) {
+        loginBtnDesktop.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Desktop login clicked');
+            cambiarHeader('p');
+            toggleDropdown();
+        });
+    }
+
+    if (loginBtnMobile) {
+        loginBtnMobile.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Mobile login clicked');
+            toggleDropdown();
+        });
+    }
+
+    // Cerrar al hacer click en overlay
+    if (overlay) {
+        overlay.addEventListener('click', closeDropdown);
+    }
+    // Cerrar con Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isDropdownOpen) {
+            closeDropdown();
+        }
+    });
+
+    // Prevenir cierre al hacer click dentro del dropdown
+    if (dropdown) {
+        dropdown.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    }
+
+    // Reposicionar en resize
+    window.addEventListener('resize', () => {
+        if (isDropdownOpen) {
+            positionDropdown();
+        }
+    });
+    //login - fin
+    if (localStorage.getItem('menu')) {
+        menu=localStorage.getItem('menu');
+    }
+    cambiarHeader(menu);
+});

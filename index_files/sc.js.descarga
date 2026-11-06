@@ -1,0 +1,1536 @@
+<!DOCTYPE html >
+<html lang="es-ES">
+<head>
+    <!---------- SEO ---------->
+    <title>Banco Ita&uacute; - Paraguay</title>
+    <!---------- validacion administrador de landings ---------->
+        <meta name="description" content="Bienvenido a Itaú Paraguay. Somos el mejor lugar del país para trabajar y el mayor banco privado de América Latina en activos ;-)">
+            <meta name="keywords" content="Itau, Itaú, Banco, Paraguay">
+    <meta name="googlebot" content="Index, Follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Itaú">
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Banco Itau – Paraguay" />
+    <meta property="og:site_name" content="Sitio web - Banco Itaú Paraguay" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://www.itau.com.py/images/logo_itau.png" />
+    <meta property="og:description" content="Bienvenido a Itaú Paraguay. Somos el mejor lugar del país para trabajar y el mayor banco privado de América Latina en activos ;-)" />
+    <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script type="application/ld+json">
+        {
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness",
+        "name" : "Itaú",
+        "image" : "https://www.itau.com.py/images/logo_itau.png",
+        "telephone" : "(021) 617 1000"
+        }
+    </script>
+    <!---------- FIN SEO ---------->
+
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+
+    <link href="/Content/css-itau?v=Y-ADRQPM3O9DII2dzFh9w8heuuPJSuvDLbkxMg3S2VE1" rel="stylesheet"/>
+
+
+    <script src="/bundles/modernizr?v=OW_x8a0O7_43bXtCep3voiVGj_CiJitcIMAFDUdtu341"></script>
+
+    <script src="/bundles/itau?v=VhAnRSRgnDWJc2yI2wfowsE5d05P4ep5vSmpZPP7cO01"></script>
+
+    <link href="/Content/redis/fuentes.css" rel="stylesheet" />
+    <link href="/Content/redis/layout.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="googlebot" content="Index, Follow" />
+<meta name="robots" content="all" />
+<meta name="author" content="Itaú Unibanco Holding S.A." />
+<link rel="image_src" href="/images/logo_itau.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<!-- Metas para FB -->
+<meta property="og:image" content="/images/logo_itau.png" />
+<meta property="og:site_name" content="Sitio web institucional - Banco Itaú" />
+<meta property="og:title" content="Banco Itaú" />
+<meta property="og:type" content="Website" />
+<!-- Metas para FB -->
+<!-- Custom Style -->
+<link rel="stylesheet" type="text/css" href="/Content/fonts/material-icons.css" />
+<link rel="stylesheet" type="text/css" href="/Content/themes/itau/itau-style18.css" />
+
+<!-- js generales -->
+
+<script src="/Scripts/jquery-1.12.1.min.js"></script>
+
+<script src="/Scripts/popper.min.js"></script>
+<script src="/Scripts/bootstrap.min.js"></script>
+
+<script type='text/javascript' src='/Scripts/Minificados/modernizr-2.5.2.js'></script>
+<script type='text/javascript' src='/Scripts/selectivizr-min.js'></script>
+<script type="text/javascript" src="/Scripts/Minificados/jquery.mask.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="/Scripts/Minificados/jquery.highlight-4.min.js"></script>
+
+
+<link href="/Content/themes/itau/themes/base/jquery.ui.all.css" rel="stylesheet" />
+<script src="/Scripts/Minificados/jquery-ui-1.10.3.js"></script>
+<script src="/Scripts/Minificados/jquery.ui.core.js"></script>
+<script src="/Scripts/Minificados/jquery.ui.widget.js"></script>
+<script src="/Scripts/Minificados/jquery.ui.position.js"></script>
+<script src="/Scripts/Minificados/jquery.ui.menu.js"></script>
+<script src="/Scripts/Minificados/kn.js"></script>
+<script src="/Scripts/Minificados/jquery.ui.selectmenu.js"></script>
+
+<!-- teclado -->
+<link href="/Content/themes/itau/teclado-1.5.css" rel="stylesheet" type="text/css">
+<script src="/Scripts/Minificados/teclado-1.5.js"></script>
+
+
+
+<!-- colorbox -->
+<link media="screen" rel="stylesheet" href="/Content/themes/itau/colorbox.css" />
+<script src="/Scripts/Minificados/jquery.colorbox.min.js"></script>
+
+<!--[if IE]>
+    <link href="/Content/themes/itau/fix-all-ie-only.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 7]>
+    <link href="/Content/themes/itau/fix-ie7.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 8]>
+    <link href="/Content/themes/itau/fix-ie8.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 9]>
+    <link href="/Content/themes/itau/fix-ie9.css" rel="stylesheet" />
+<![endif]-->
+<script type="text/javascript" src="/Scripts/itau.head.js"></script>
+
+    <!--[if !IE]>-->
+    <script type="text/javascript" src="/Scripts/itau.estaticas.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            history.pushState('layout', '', location.href);
+
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if gte IE 9]>
+    <![endif]-->
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <!--GTM-Script-->
+    <script type="text/javascript" language="javascript" src="/Scripts/Minificados/gtm-itau.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://www.googleoptimize.com/optimize.js?id=OPT-K5TRWZG"></script>
+    <script type="text/javascript" language="javascript">
+        jQuery(function ($) {
+
+
+
+
+
+
+        });
+
+    </script>
+    <!--slider principal-->
+    <!-- fin GEOLOCALIZACION -->
+    <!-- Navegadores Soportados -->
+    <script type='text/javascript'>
+        _navegador = {};
+
+        function verificarBrowser() {
+            var uagent = navigator.userAgent.toLowerCase(),
+                match = '';
+            // $("#browserResult").html("User agent string: <b>" + uagent + "</b>");
+
+            _navegador.chrome = /webkit/.test(uagent) && /chrome/.test(uagent);
+            _navegador.firefox = /mozilla/.test(uagent) && /firefox/.test(uagent);
+            _navegador.msie = /msie/.test(uagent) || /trident/.test(uagent);
+            _navegador.safari = /safari/.test(uagent) && /applewebkit/.test(uagent) && !/chrome/.test(uagent);
+            _navegador.opr = /mozilla/.test(uagent) && /applewebkit/.test(uagent) && /chrome/.test(uagent) && /safari/.test(uagent) && /opr/.test(uagent);
+            _navegador.version = '';
+
+            for (x in _navegador) {
+                if (_navegador[x]) {
+                    match = uagent.match(new RegExp("(" + x + ")( |/)([0-9]+)"));
+                    if (match) {
+                        _navegador.version = match[3];
+                    }
+                    else {
+                        match = uagent.match(new RegExp("rv:([0-9]+)"));
+                        if (match) {
+                            _navegador.version = match[1];
+                        }
+                    }
+                    //Xml Navegadores
+                    $.get("/Content/archivos/navegadores.xml", function (xml) {
+                        $(xml).find("navegador").each(function () {
+                            var name = $(this).find('nombre').text();
+                            var description = $(this).find('version').text();
+
+                            if (name == x && parseInt(_navegador.version) < parseInt(description)) {
+                                if (getCookie("MsjNavegadorCompatible") == "") {
+                                    setCookieN("MsjNavegadorCompatible", "1", -2);
+                                    $("#noHomologado").css("display", "block");
+                                }
+                            }
+
+                            switch (name) {
+                                case 'chrome':
+                                    $("#navChromeMin").html(description);
+                                    break;
+                                case 'msie':
+                                    $("#navMsieMin").html(description);
+                                    break;
+                                case 'firefox':
+                                    $("#navFirefoxMin").html(description);
+                                    break;
+                                case 'opr':
+                                    $("#navOprMin").html(description);
+                                    break;
+                                case 'safari':
+                                    $("#navSafariMin").html(description);
+                                    break;
+                            }
+                        });
+                    });
+                    //Xml Navegadores
+                    if (x == "msie")
+                        x = "Internet Explorer";
+                    $("#browserResult").html((x === "opr" ? "Opera" : x) + " " + _navegador.version);
+                    break;
+                }
+            }
+            _navegador.opera = _navegador.opr;
+            delete _navegador.opr;
+        }
+        $(document).ready(function () {
+
+
+            verificarBrowser();
+            // BOTON CERRAR MENSAJE NAV NO HOMOLOGADO
+            $('#cerrar.cerrar').click(function () {
+                $("#noHomologado").fadeOut('low');
+                setCookieN("MsjNavegadorCompatible", "1", 2);
+            });
+            // BOTON CERRAR MENSAJE NAV NO HOMOLOGADO
+        });
+        function setCookieN(cname, cvalue, exhour) {
+            document.cookie = "MsjNavegadorCompatible=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            var d = new Date();
+
+            d.setTime(d.getTime() + (2 * 1000 * 60 * 60));
+            //var d =new Date(now.getTime() + (2 * 1000 * 60 * 60));
+            var expires = "Expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+    </script>
+    <!-- Fin Navegadores Soportados -->
+    <script src="/Scripts/sc.js"></script>
+</head>
+<body>
+    <!-- loading irroba -->
+    <div class="overbox" style="display: none;">
+        <div class="content">
+            <img src="/Images/loading.gif" alt="" /><br />
+            Aguard&aacute; un momento por favor...</div>
+    </div>
+    <div class="fadebox" style="display: none;">
+        &nbsp;</div>
+    <!-- loading irroba -->
+    
+    <!-- mensajes CHICO -->
+    <div class="msjChico" id="alertaChico" style="display: none;">
+        <div class="content">
+            <img src="/Images/error.png" alt="" />Ocurri&oacute; un error al consultar,<br />
+            volv&eacute; a intentar en unos minutos.</div>
+    </div>
+    <div class="fadeboxChico h2" id="overboxAlertaChico" style="display: none;">
+        &nbsp;</div>
+    <!-- mensajes CHICO -->  
+    
+    
+    <!-- mensajes no homologado -->
+    <div class="noHomologado padding10 txtCenter" id="noHomologado" style="display:none;">
+        <a href="#" title="Cerra alerta" class="cerrar floatR" id="cerrar">x</a>
+        <strong>Importante:</strong> Tu navegador es incompatible con algunas funcionalidades de nuestro sitio. Actualizalo <a href="/Paginas/navegadores_soportados" title="">aqu&iacute;</a>
+    </div>
+    <!-- mensajes no homologado -->
+    
+
+<header>
+    
+    <link rel="stylesheet" type="text/css" href="/Content/themes/itau/acceso_rapido.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/themes/itau/font_style.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '999593602124737');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=999593602124737&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    <script type="text/javascript">
+        var envAnalitics = 'Prod';
+        //-- GOOGLE TAG MANAGER
+        // GTM Object
+        window["analyticsData"]=  {
+          "site": {
+              "developmenttype": "Web",
+              "environment": 'Prod',
+              "useragent": navigator.userAgent,
+              "permissions": "",
+              "accessibility": "",
+              "channel": "SitioPublicoUN"
+          },
+          "visitor": {
+              "geolocation": ""
+          },
+          "page": {
+              "name": "SP:PY:UN:NL:AreaComun:Home:Consultar:HomeSitioPublico",
+              "family": "AreaComun",
+              "subfamily": "Home",
+              "action": "Consultar",
+              "pageid": ""
+          },
+          "custom":{
+              "internaltracking": "",
+              "errorname": ""
+          },
+          "toolkit": {
+              "versao": "1.6.3",
+              "data": "11/11/2021"
+          },
+          "rule": "pageLoad"
+      };
+
+        (function (w, d, b, l, c) {
+            w[l] = function () { };
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = '/Scripts/analytics-vanilla-v.1.0.1.js';
+            s.onload = function () {
+                w[l].init(c);
+                w[l].trackState(window.analyticsData.page.name, window.analyticsData.custom);
+            };
+            d[b].appendChild(s);
+        })(window, document, 'head', 'analyticsLib', {
+            gtmContainerId: 'GTM-P7RJ5JN',
+            autoTrackState: false, // default true
+            debug: false // default false
+        });
+
+        function trackAction_AbriTuCuenta() {
+            analyticsLib.trackAction({
+                "customCategory": "Body | Button | Top",
+                "customAction": "Click",
+                "customLabel": "AbriTuCuenta",
+                "customValue": ""
+            });
+        }
+
+        function trackAction_PagosElectronicos() {
+            analyticsLib.trackAction({
+                "customCategory": "Body | Button | Top",
+                "customAction": "Click",
+                "customLabel": "PagosElectronicos",
+                "customValue": ""
+            });
+        }
+
+        function trackAction_Ingresar(){
+            analyticsLib.trackAction({
+                "customCategory": "Body | Button | Top",
+                "customAction": "Click",
+                "customLabel": "Ingresar",
+                "customValue": ""
+            });
+        }
+
+        function trackAction_SelectOperador() {
+            analyticsLib.trackAction({
+                "customCategory": "Body | Checkbox | Center",
+                "customAction": "Click",
+                "customLabel": "SelectOperador",
+                "customValue": ""
+            });
+        }
+
+        function trackAction_SelectAdmin() {
+            analyticsLib.trackAction({
+                "customCategory": "Body | Checkbox | Center",
+                "customAction": "Click",
+                "customLabel": "SelectAdmin",
+                "customValue": ""
+            });
+        }
+
+        function trackAction_PediTuTarjetaDeCredito() {
+            analyticsLib.setData("transaction.details.requestedlimitincreaserange", "NumeroSolicitud");
+            analyticsLib.trackAction({
+                "customCategory": "Body | Link | Left",
+                "customAction": "Click",
+                "customLabel": "PediTuTarjetaDeCredito",
+                "customValue": ""
+            });
+
+        }
+        function trackAction_PediTuCuentaDigital() {
+            analyticsLib.setData("transaction.details.requestedlimitincreaserange", "NumeroSolicitud");
+            analyticsLib.trackAction({
+                "customCategory": "Body | Link | Left",
+                "customAction": "Click",
+                "customLabel": "PediTuCuentaDigital",
+                "customValue": ""
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+        window["analyticsData"]=  {
+          "site": {
+              "developmenttype": "Web",
+              "environment": 'Prod',
+              "useragent": navigator.userAgent,
+              "permissions": "",
+              "accessibility": "",
+              "channel": "SitioPublicoUN"
+          },
+          "visitor": {
+              "geolocation": ""
+          },
+          "page": {
+              "name": "SP:PY:UN:NL:AreaComun:Home:Consultar:HomeSitioPublico",
+              "family": "AreaComun",
+              "subfamily": "Home",
+              "action": "Consultar",
+              "pageid": ""
+          },
+          "custom":{
+              "internaltracking": "",
+              "errorname": ""
+          },
+          "toolkit": {
+              "versao": "1.6.3",
+              "data": "09/03/2021"
+          },
+          "rule": "pageLoad"
+      };
+
+
+        //aguarde_small(true);
+    jQuery(function ($) {
+
+
+
+			 $.ajax({
+            type: "POST",
+            url: "/Common/Paginas",
+            error: function (jqXHR, textStatus) {
+
+                aguarde(false);
+                alertaChico(true);
+
+            },
+            success: function (msg) {
+                if (msg.error != undefined) {
+                    if (msg.error) {
+                        alertaChico(true);
+                    }
+                    aguarde(false);
+                } else {
+                    aguarde(false);
+                    resultado = msg;
+
+                    filtra();
+                }
+
+            },
+            timeout: 15000
+        });
+
+		    $("#btn_buscar_arriba").click(function () {
+                busqueda_arriba();
+                return false;
+            });
+
+			$("#vprocesar").click(function () {
+                ingresar();
+                return false;
+			});
+
+			$('input:radio[name=TipoDeOperador]').change(function(){
+			    var tipoOperador= $('input:radio[name=TipoDeOperador]:checked').val();
+			    if(tipoOperador === "Administrador"){
+			        $('#ci_operador').val('');
+			    }
+			});
+
+			$("#vprocesar_pe").click(function (e) {
+                e.preventDefault();
+                $('#vprocesar_pe').prop('disabled', true);
+
+			    var tipo_operador;
+			    var ruc_empresa = $('#ruc_empresa_pe').val();
+			    var ci_operador = $('#ci_operador').val();
+
+			    $("#RUCEmpresa").val($("#ruc_empresa_pe").val());
+                $("#CIOperador").val($("#ci_operador").val());
+                tipo_operador = $('#TipoDeOperador').val();
+			    //capturar el tipo de operador (operador o administrador)
+			    //var radioButton = document.getElementsByName('TipoDeOperador');
+			    //for(var i = 0; i < radioButton.length; i++){
+			    //    if(radioButton[i].checked){
+			    //        tipo_operador = radioButton[i].value;
+			    //    }
+			    //}
+			    //llamada Ajax
+			    AjaxPeValidation(tipo_operador,ruc_empresa, ci_operador);
+                //track action boton ingresar
+                trackAction_Ingresar();
+                //track action Tipo De Operador
+                if (tipo_operador == "Operador")
+                    trackAction_SelectOperador();
+                if (tipo_operador == "Administrador")
+                    trackAction_SelectAdmin();
+                //
+                $('#vprocesar_pe').prop('disabled', false);
+			});
+
+            $("#buscador_arriba").submit(function () {
+                busqueda_arriba();
+                return false;
+            });
+
+            //Blinds PJ
+            $("#ruc_empresa_pe").keyup(function () {
+                $("#RUCEmpresa").val($("#ruc_empresa_pe").val());
+
+            });
+            $("#ci_operador").keyup(function () {
+                $("#CIOperador").val($("#ci_operador").val());
+
+            });
+
+            $("#admin-pe-radio-btn").keyup(function () {
+                $("#TipoDeOperador").val($("#admin-pe-radio-btn").val());
+            });
+
+            //Binds
+            $("#cedula").keyup(function () {
+                $("#vcedula").val($("#cedula").val());
+
+            });
+            $("#ruc").keyup(function () {
+                $("#vcedula").val($("#ruc").val());
+
+            });
+
+            $("#cuenta").keyup(function () {
+                $("#vcuenta").val($("#cuenta").val());
+                //alert($("#vcedula").val());
+
+            });
+            $("#cuenta_empresa").keyup(function () {
+                $("#vcuenta").val($("#cuenta_empresa").val());
+
+            });
+            $("#otros").keyup(function () {
+                var valor = $("#otros").val();
+                var valor = valor.replace(/^(\d{4})(\d{4})(\d{4})(\d{4}).*/,"$1-$2-$3-$4");
+                $("#vcuenta").val(valor);
+            });
+            $("#amex").keyup(function () {
+                var valor = $("#amex").val();
+                var valor = valor.replace(/^(\d{4})(\d{6})(\d{5}).*/,"$1-$2-$3");
+                $("#vcuenta").val(valor);
+            });
+
+            //Cuentas
+            $("#cuenta")
+                .keyup(habilitarSgte)
+                .blur(habilitarSgte);
+
+            $("#cuenta_empresa")
+                .keyup(habilitarSgte)
+                .blur(habilitarSgte);
+
+            $("#amex")
+                .keyup(habilitarSgte)
+                .blur(habilitarSgte);
+
+            $("#otros")
+                .keyup(habilitarSgte)
+                .blur(habilitarSgte);
+
+        });
+        $("#cuenta").keypress(function () {
+            return isNumberKey(this);
+        });
+        $("#cuenta_empresa").keypress(function () {
+            return isNumberKey(this);
+        });
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+
+        function busqueda_arriba() {
+            //el resto en el footer
+            es_arriba = true;
+            valor_arriba = $("#txt_palabra_arriba").val();
+            $("#txt_palabra").val(valor_arriba);
+            $("#sitemap").fadeIn('slow');
+            $("footer").css({ position: 'relative' });
+            $("body").css({ "overflow-y": 'scroll', "overflow-x": 'hidden' });
+
+            $('html, body').animate({
+                scrollTop: $("#sitemap").offset().top
+            }, 2000);
+            filtra();
+            $("#btnSitemap.cerrar").fadeIn('fast');
+            $("#btnSitemap.abrir").fadeOut('fast');
+            return false;
+        }
+
+        function ingresar() {
+            console.log($("acceso_hb"));
+            //console.log("hola");
+		   var valorPersona = $("#segmento").val();
+		   var valorDocumento = $("#cedula").val();
+		   var n = valorDocumento.indexOf("-");
+		   var homeHabilitadoWEB = true;
+		   var homePjHabilitadoWEB = true;
+            if (!homePjHabilitadoWEB) {
+                $.colorbox({ iframe: true, innerWidth: 600, innerHeight: 240, href: "/Paginas/HB-nodisponible?sinl=sinl", scrolling: false });
+                return false;
+            }
+            if(valorPersona !== "PagosElectronicos"){
+
+                if (valorPersona == "panelPersona") {
+                    if(n != -1){
+                        if(!homePjHabilitadoWEB){
+                            $.colorbox({iframe:true, innerWidth:600, innerHeight:240, href:"/Paginas/HB-nodisponible?sinl=sinl", scrolling: false});
+                            return false;
+                        }
+                        document.getElementById("acceso_hb").action = 'https://www.secure.itau.com.py/24horasinternetPj/Login';
+                        window.location = 'https://www.secure.itau.com.py/24horasinternetPj/Login'
+                    }else{
+
+                        if(!homeHabilitadoWEB){
+                            $.colorbox({iframe:true, innerWidth:600, innerHeight:240, href:"/Paginas/HB-nodisponible?sinl=sinl", scrolling: false});
+                            return false;
+                        }
+                        document.getElementById("acceso_hb").action = 'https://www.secure.itau.com.py/24horasinternet/Login';
+                        window.location = 'https://www.secure.itau.com.py/24horasinternet/Login'
+                    }
+                }else if(valorPersona =="panelEmpresa") {
+                    if(!homePjHabilitadoWEB){
+                        $.colorbox({iframe:true, innerWidth:600, innerHeight:240, href:"/Paginas/HB-nodisponible?sinl=sinl", scrolling: false});
+                        return false;
+                    }
+                    document.getElementById("acceso_hb").action = 'https://www.secure.itau.com.py/24horasinternetPj/Login';
+                    window.location = 'https://www.secure.itau.com.py/24horasinternetPj/Login'
+                }
+
+                $("#acceso_hb").submit();
+
+            }else{
+                var tipo_operador;
+                var ruc_empresa = $('#ruc-empresa-pe-responsive').val();
+                var ci_operador = $('#ci-operador-responsive').val();
+
+                //capturar el tipo de operador (operador o administrador)
+                var radioButton = document.getElementsByName('TipoDeOperadorResp');
+                for(var i = 0; i < radioButton.length; i++){
+                    if(radioButton[i].checked){
+                        tipo_operador = radioButton[i].value;
+                    }
+                }
+
+                //llamada Ajax
+                AjaxPeValidation(tipo_operador,ruc_empresa, ci_operador);
+            }
+        }
+
+        function ingresar_pe(result, ci_operador) {
+            var urlAccesoSitioNuevo = "https://www.secure.itau.com.py/24HorasNegocios/Cuenta/Ingreso";
+            var urlAccesoPL = "https://www.secure.itau.com.py/pls/inter_dad/pagos_electronicos.inicio";
+            var urlAccesoPaso1 = "https://www.secure.itau.com.py/24HorasNegocios";
+            var ruc_empresa = result.rucEmpresa;
+            console.log(result.data);
+           
+            if(result.data === true && result.tipoOperador === "Operador" && (ruc_empresa === "RUC de la empresa" || ci_operador === "CI del operador"))
+            {
+                document.getElementById("acceso_pe").action = urlAccesoPaso1;
+                window.location = urlAccesoPaso1;
+            }
+            else if(result.data === true && result.tipoOperador === "Administrador" && ruc_empresa === "RUC de la empresa")
+            {
+                document.getElementById("acceso_pe").action = urlAccesoPaso1;
+                window.location = urlAccesoPaso1;
+            }
+            else if(result.data === false && result.tipoOperador === "Operador")
+            {
+                document.getElementById("acceso_pe").action = urlAccesoSitioNuevo;
+                window.location = urlAccesoSitioNuevo;
+            }
+            else if(result.data === false && result.tipoOperador === "Administrador")
+            {
+                document.getElementById("acceso_pe").action = urlAccesoSitioNuevo;
+                window.location = urlAccesoSitioNuevo;
+            }
+            else
+            {
+                document.getElementById("acceso_pe").action = urlAccesoPL;
+                window.location = urlAccesoPL;
+            }
+
+            $("#acceso_pe").submit();
+        }
+
+        function AjaxPeValidation(tipo_operador,ruc_empresa, ci_operador){
+            $.ajax({
+                type: "POST",
+                url: "/Home/AccessValidationPE",
+                dataType: "json",
+                data: {
+                    tipoOperador: tipo_operador,
+                    rucEmpresa: ruc_empresa
+                },
+                success: function (result) {
+                    console.log(result);
+                    //si result.data es false se ingresa al paso 2 del login nuevo mediante la funcion, si da true se envia al paso 2 del sitio viejo
+                    ingresar_pe(result, ci_operador);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+            return false;
+        }
+    </script>
+    <script src="/Content/redis/layout.js"></script>
+    <script src="/Scripts/tagging.js"></script>
+    <!-- header -->
+    <!-- Navigation -->
+    <nav id="nav-menu-head" class="navbar navbar-expand-lg navbar-custom personas">
+        <div class="container">
+            <a class="navbar-brand text-white font-weight-bold" href="/">
+                <img src="/images/redis/logo.svg" style="width:48px;" class="img-fluid" alt="Logo Banco Itaú " />
+            </a>
+            <a onclick="trackAction_AbriTuCuenta(); customClick({description: 'AbriTuCuenta(Home)'});" href="https://www.itau.com.py/cuentadigital" target="_blank" class="btn btn-outline-white d-lg-none">Abr&iacute; tu cuenta</a>
+            <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button> -->
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="search-mobile d-lg-none">
+                    <div style="position: relative; width: 100%;">
+                        <img src="/images/redis/busqueda.png" alt="busqueda" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; pointer-events: none; z-index: 10;">
+                        <input type="text" onclick="realizarBusqueda()" class="form-control" placeholder="Buscar" style="padding-left: 44px; width: 100%; height: 48px; border-radius: 16px; border: 1px solid #B3B3B3; background: #F1F2F4;" />
+                    </div>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown persona" style="list-style-image:none !important;">
+                        <a class="nav-link dropdown-toggle text-w-19-700" onclick="closeDropdown(); cambiarHeader('p')" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Para vos
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-custom persona" id="menuPersonas">
+                            <div class="dropdown-content-wrapper">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="dropdown-section">
+                                            
+                                            <a class="dropdown-item" onclick="customClick({description: 'CuentaCorriente(ParaVos)'})" href="/Paginas/paravos_cuentacorriente">
+                                                Cuenta corriente
+                                            </a>
+
+                                            <a class="dropdown-item" onclick="customClick({description: 'CajadeAhorro(ParaVos)'})" href="/Paginas/paravos_cajadeahorro">
+                                                Caja de ahorro
+
+                                            </a>
+                                            <a class="dropdown-item" href="/Paginas/paravos_prestamos" onclick="customClick({description: 'Prestamos(ParaVos)'})">
+                                                Préstamos
+
+                                            </a>
+                                            <a class="dropdown-item" href="/Paginas/paravos_tarjetas" onclick="customClick({description: 'Tarjetas(ParaVos)'})">
+                                                Tarjetas
+
+                                            </a>
+                                            <a class="dropdown-item" href="/inversiones" onclick="customClick({description: 'Inversiones(ParaVos)'})" >
+                                                Inversiones
+
+                                            </a>
+                                            <a class="dropdown-item" onclick="customClick({description: 'Seguros(ParaVos)'})"  href="/Paginas/paravos_seguros">
+                                                Seguros
+
+                                            </a>
+                                            <a class="dropdown-item" onclick="customClick({description: 'Servicios(ParaVos)'})" href="/Paginas/paravos_servicios">
+                                                Servicios
+                                            </a>
+                                            <a class="dropdown-item" onclick="customClick({description: ' TransferenciasAlExterior(ParaVos)'})" href="/transferenciasalexterior">
+                                                Transferencias al exterior
+
+                                            </a>
+                                            <a class="dropdown-item" href="https://www.pik.com.py/">
+                                                Pik
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--Objetivos - Inicio-->
+                                    <div class="col-md-3">
+                                        <div class="dropdown-section">
+                                            <span class="dropdown-header">Tus objetivos</span>
+
+                                            <a class="dropdown-item dropdown-item-after p-3" onclick="customClick({description: 'MiCasa(TusObjetivos)'})" href="https://www.micasa.itau.com.py/">
+                                                
+                                                <div class="dropdown-item-link-row ">
+                                                    <span class="text-n-12-700">Mi casa</span>
+                                                    <span class="text-n-12-400">Comprá, reformá y protegé tu hogar</span>
+                                                </div>
+
+                                            </a>
+                                            <a class="dropdown-item dropdown-item-after p-3" onclick="customClick({description: 'MiAuto(TusObjetivos)'})" href="https://www.miauto.itau.com.py/">
+                                                
+                                                <div class="dropdown-item-link-row ">
+                                                    <span class="text-n-12-700">Mi auto</span>
+                                                    <span class="text-n-12-400">Adquirí tu vehículo 0 Km</span>
+
+                                                </div>
+
+                                            </a>
+                                            <a class="dropdown-item dropdown-item-after p-3" onclick="customClick({description: 'MisProyectos(TusObjetivos)'})" href="/Paginas/tusobjetivos_misproyectos">
+                                                
+                                                <div class="dropdown-item-link-row">
+                                                    <span class="text-n-12-700">Mis proyectos</span>
+                                                    <span class="text-n-12-400">Planeá tu futuro tranquilo</span>
+
+                                                </div>
+
+                                            </a>
+                                            <a class="dropdown-item dropdown-item-after p-3" onclick="customClick({description: 'Futuro(TusObjetivos)'})" href="/Paginas/tusobjetivos_futuro">
+                                                
+                                                <div class="dropdown-item-link-row ">
+                                                    <span class="text-n-12-700">Futuro</span>
+                                                    <span class="text-n-12-400">Planeá tu objetivo</span>
+
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="/Paginas/atencionparavos" onclick="customClick({description: 'AtencionAlCliente(TusObjetivos)'})" class="dropdown-item">Atenci&oacute;n al cliente </a>
+                                        </div>
+                                    </div>
+                                    <!--Objetivos - Fin-->
+                                    <div class="col-md-3">
+                                        <div class="dropdown-section">
+                                            <span class="dropdown-header">Otros</span>
+                                            <a href="/personalbank" onclick="customClick({description: 'ItauPersonalBank(Otros)'})" class="dropdown-item dropdown-item-after">Itaú Personal Bank</a>
+                                            <a href="https://www.itauassetmanagement.com.py/" onclick="customClick({description: ''})" class="dropdown-item dropdown-item-after">Itaú Asset Management</a>
+                                            <a href="https://www.itauinvest.com.py/" onclick="customClick({description: ''})" class="dropdown-item dropdown-item-after"> Itaú Invest</a>
+                                            <a href="https://www.itauseguros.com.py/" onclick="customClick({description: ''})" class="dropdown-item dropdown-item-after">Itaú Seguros</a>
+                                            <a href="https://tiendanaranja.com.py/" onclick="customClick({description: ''})" class="dropdown-item dropdown-item-after">Tienda Naranja </a>
+                                            <a href="https://www.fundacionitau.com.py/" onclick="customClick({description: 'FundacionItauParaguay'})" class="dropdown-item dropdown-item-after">Fundación Itaú </a>
+
+
+                                            <a href="https://itaureporteanual.com.py" target="_blank" class="dropdown-item dropdown-item-after">
+                                                Reporte de Sustentabilidad
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown empresa" style="list-style-image:none !important;">
+                        <a class="nav-link dropdown-toggle text-w-19-700" onclick="closeDropdown(); cambiarHeader('e'); customClick({ description: 'ParaEmpresas' });" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Para empresas
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-custom empresa" id="menuEmpresas">
+                            <div class="dropdown-content-wrapper">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="dropdown-section">
+                                            
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_cuentacorriente" onclick="customClick({description: 'CuentaCorriente(ParaEmpresas)'})" title="Cuenta corriente">Cuenta corriente</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_cajadeahorro" onclick="customClick({description: 'CajaDeAhorro(ParaEmpresas)'})" title="Caja de ahorro">Caja de ahorro</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_prestamos" onclick="customClick({description: 'Prestamos(ParaEmpresas)'})" title="Pr&eacute;stamos">Pr&eacute;stamos</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_tarjetas" onclick="customClick({description: ' Tarjetas(ParaEmpresas)'})" title="Tarjetas">Tarjetas</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_inversiones" onclick="customClick({description: ' Inversiones(ParaEmpresas)'})" title="Inversiones">Inversiones</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_seguros" onclick="customClick({description: 'Seguros(ParaEmpresas)'})" title="Seguros">Seguros</a>
+                                            <a class="dropdown-item " href="/Paginas/paraempresas_servicios" onclick="customClick({description: 'Servicios(ParaEmpresas)'})" title="Servicios">Servicios</a>
+                                            <a class="dropdown-item" href="https://www.pik.com.py/" title="Pik">
+                                                Pik
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="dropdown-section">
+                                            <a class="dropdown-item dropdown-item-after" onclick="customClick({description: 'Empresas(ParaEmpresas)'})" href="/paraempresas"><strong>Empresas</strong></a>
+                                            <a class="dropdown-item dropdown-item-after" onclick="customClick({description: 'ItauBBA(ParaEmpresas) '})" href="/itaubba/"><strong>Ita&uacute; BBA</strong></a>
+                                            <a class="dropdown-item dropdown-item-after" onclick="customClick({description: 'ItauCampo(ParaEmpresas)'})" href="/itaucampo/"><strong>Ita&uacute; Campo</strong></a>
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="dropdown-section">
+                                            <a class="dropdown-item dropdown-item-after" href="/Paginas/paraempresas_comercioexterior" onclick="customClick({description: 'ComercioExterior(ParaEmpresas)'})" title="Comercio exterior">Comercio exterior</a>
+                                            <a class="dropdown-item dropdown-item-after" href="/Paginas/paraempresas_tesoreria" onclick="customClick({description: 'Tesoreria(ParaEmpresas)'})" title="Tesorer&iacute;a">Tesorer&iacute;a</a>
+                                            <a class="dropdown-item dropdown-item-after" href="/Paginas/paraempresas_pagoselectronicos" onclick="customClick({description: 'PagoYCobrosElectronicos(Tesoreria)'})" title="Pagos y cobros electr&oacute;nicos">Pagos y cobros electr&oacute;nicos</a>
+                                            <a class="dropdown-item dropdown-item-after" href="/Paginas/paraempresas_pagoselectronicos_pagoaproveedores" onclick="customClick({description: 'PagosAProveedores(ParaEmpresas)'})" title="Pagos a proveedores">Pagos a proveedores</a>
+                                            <a href="/Paginas/atencionparaempresas" onclick="customClick({description: 'AtencionAlCliente(ParaEmpresas)'})" class="dropdown-item">Atenci&oacute;n al cliente </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="navbar-actions-mobile d-lg-none">
+                    <button class="btn btn-white" onclick="customClick({description: 'Ingresar(Home)'})"  id="loginBtnMobile">Ingresar</button>
+
+
+                    <a href="/Ayuda?sinl=sinl" class="btn btn-outline-white ayuda cboxElement">
+                        <i class="fas fa-question-circle"></i>
+                        Ayuda
+                    </a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center navbar-actions-desktop">
+                    <div style="position: relative; width: 330px; @*margin-right: 10px;*@">
+                        <button type="button" onclick="realizarBusqueda(); customClick({description: 'Buscar(Home)'});" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; border: none; background: transparent; cursor: pointer; z-index: 10; padding: 0;">
+                            <img src="/images/redis/busqueda.png" alt="busqueda" style="width: 24px; height: 24px;">
+                        </button>
+                        <input type="text" id="btn-buscar-head" class="form-control" placeholder="Buscar" onkeypress="handleSearchKeypress(event)" style="padding-left: 44px; width: 100%; position: relative; z-index: 1;" />
+                    </div>
+                    <button class="btn btn-ingresar mr-3 text-w-16-700" id="loginBtnDesktop" onclick="customClick({description: 'Ingresar(Home)'})"> <img src="/images/redis/ue973-plus_base--mais.svg" alt="busqueda" style="width: 16px; height: 16px;">Ingresar</button>
+                    <a onclick=" trackAction_AbriTuCuenta(); customClick({description: 'AbriTuCuenta(Home)'});" href='https://www.itau.com.py/cuentadigital' target="_blank" class="btn btn-outline-white mr-2 text-w-20-700">Abr&iacute; tu cuenta</a>
+
+
+                    <div class="ml-5" style="position: relative; display: flex; flex-direction: column; align-items: center;">
+                        <a href="/Ayuda?sinl=sinl" onclick="customClick({description: 'Ayuda(Home)'})" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;" class="ayuda cboxElement">
+                            <img src="/images/redis/help_base.png" alt="ayuda" />
+                            <span style="color: #FFF; text-align: center; font-size: 12px; font-weight: 400; line-height: 12px; margin-top: 4px;">Ayuda</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!--login-->
+    
+
+    <div class="login-dropdown d-none" id="dropdownMenu">
+
+        <div class="tabs" style="background:#FFF">
+            <button class="tab active" onclick="switchTab('personas'); customClick({description: 'Homebanking(IngresarHome)'});" id="tab-personas">
+                <span class="icon"><img src="/Images/redis/hb.svg" style="width:13.5px;height:15px;" /></span>Homebanking
+            </button>
+            <button class="tab emp" onclick="switchTab('empresas'); customClick({description: ' 24HorasNegocios(Ingresar)'});" style="color:#000066 !important;" id="tab-empresas">
+                <span class="icon"><img src="/Images/redis/empresas_outline.png" /></span>24 horas negocios
+            </button>
+        </div>
+        <button style="float:right;padding:16px;margin-right:16px;border:0;" onclick="closeDropdown();">
+            <img src="/Images/redis/ue956-close_base--fechar.svg" />
+        </button>
+
+        <!-- Formulario para personas -->
+        <div id="form-personas" class="tab-content form-login">
+            
+            <form action="https://www.secure.itau.com.py/24horasinternet/Login" autocomplete="off" method="post" id="acceso_hb">
+                <div class="form-group">
+                    <select id="tipoPer" onchange="tipoCuentaHb()" class="tipoCuentaHb">
+                        <option value="p">Personas físicas</option>
+                        <option value="ruc">Empresas</option>
+                    </select>
+                </div>
+
+                <div id="fper">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="select-wrapper">
+                                <select id="docTypePersonas" style="width:65px;">
+                                    <option value="ci">C.I.</option>
+                                </select>
+                            </div>
+                            <input type="text" class="main-input" placeholder="Documento" id="cedula">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="select-wrapper">
+                                <select id="tipoCuenta" onchange="tipoCuentaChange()" style="width:95px;">
+                                    <option value="cuenta" selected>Cuenta</option>
+                                    <option value="tarjeta">Tarjeta</option>
+                                </select>
+                            </div>
+                            <input type="text" class="main-input div-cuenta" placeholder="Número" id="cuenta">
+                            
+                            <input type="text" style="display: none;" class="main-input  div-tarjetas div-otros" autocomplete="off" placeholder="Número de tarjeta" id="otros" maxlength="19">
+                            
+                            <input type="text" style="display: none;" class="main-input  div-tarjetas div-amex" autocomplete="off" placeholder="0000-000000-00000" id="amex" maxlength="17">
+                            
+                        </div>
+                    </div>
+                    <div class="form-check form-check-inline m-0 ml-2 div-tarjetaOpt d-none">
+                        <input class="form-check-input" type="radio" name="groupTarjeta" id="chk_otros" value="otros" checked="checked">
+                        <label class="form-check-label" for="groupTarjeta1"><small>Mastercard, Visa u Otros</small></label>
+                    </div>
+                    <div class="form-check form-check-inline m-0 ml-2 div-tarjetaOpt d-none">
+                        <input class="form-check-input" type="radio" name="groupTarjeta" id="chk_amex" value="amex">
+                        <label class="form-check-label" for="groupTarjeta2"><small>American Express</small></label>
+                    </div>
+                </div>
+                <div id="femp" style="display:none;">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="select-wrapper">
+                                <select id="docTypeEmpresas" style="width:80px;">
+                                    <option value="ruc">R.U.C.</option>
+                                </select>
+                            </div>
+                            <input type="text" class="main-input" placeholder="Documento" id="ruc">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="select-wrapper">
+                                <select id="accountTypeEmpresas" style="width:90px;">
+                                    <option value="cuenta">Cuenta</option>
+                                </select>
+                            </div>
+                            <input type="text" class="main-input" placeholder="Número" id="cuenta_empresa">
+                        </div>
+                    </div>
+                </div>
+
+                <input type="hidden" name="vcedula" id="vcedula" />
+                <input type="hidden" name="vcuenta" id="vcuenta" />
+                <input type="hidden" name="vcard1" id="vcard1" value="M" />
+                <input type="hidden" name="vnum1" id="vnum1" value="" />
+                <input type="hidden" name="vnum2" id="vnum2" value="" />
+                <input type="hidden" name="vnum3" id="vnum3" value="" />
+                <input type="hidden" name="vnum4" id="vnum4" value="" />
+
+                <p class="redirect-notice">Serás redirigido para iniciar sesión</p>
+
+                <button class="login-button" id="vprocesar"  onclick="customClick({description: 'Ingresar(Homebanking)'})">
+                    Ingresar
+                </button>
+            </form>
+            <a href="/SolicitudPinPf" onclick="customClick({description: ' SolicitarPinDeAcceso(Homebanking)'})" target="_blank" class="pin-link">
+                Solicitar PIN de acceso
+            </a>
+        </div>
+
+        <!-- Formulario para empresas -->
+        <div id="form-empresas" class="tab-content form-login empresa" style="display: none;">
+            <form action="https://www.secure.itau.com.py/24HsNegocios/Cuenta/Ingreso/" autocomplete="off" method="post" id="acceso_pe" data-gtm-form-interact-id="1">
+                <div class="form-group">
+                    <select id="TipoDeOperador" name="TipoDeOperador" onchange="tipoOperador()" class="tipoCuentaHb">
+                        <option value="Operador">Operador</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="main-input" placeholder="RUC de la empresa" id="ruc_empresa_pe" maxlength="11" autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group" id="cioper">
+                    <div class="input-group">
+                        <input type="text" class="main-input" placeholder="CI del operador" id="ci_operador" maxlength="12" autocomplete="off">
+                    </div>
+                </div>
+
+                <input type="hidden" name="RUCEmpresa" id="RUCEmpresa">
+                <input type="hidden" name="CIOperador" id="CIOperador">
+                <button class="login-button accesoHB_2" id="vprocesar_pe">
+                    Ingresar
+                </button>
+            </form>
+        </div>
+
+
+
+        
+
+    </div>
+    <!--login-->
+    <!-- header -->
+    <script type="text/javascript">
+        //$(document).ready(function () {
+        //    //Cambia color header over 
+        //    const btn = document.querySelector('.empresa');
+        //    const container = document.getElementById('nav-menu-head');
+
+        //    btn.addEventListener('mouseenter', () => {
+        //        container.style.backgroundColor = '#0A1D4E';
+        //    });
+
+        //    btn.addEventListener('mouseleave', () => {
+        //        container.style.backgroundColor = '#FF6200';
+
+        //    });
+        //});
+        //document.getElementById("24hs_tab").style.display = "block";
+
+        function open_tab(event, tab_name) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-quick-access-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tab_name).style.display = "block";
+            event.currentTarget.className += " active";
+            //Pagos Electronicos track action
+            if (tab_name == "pe_tab") {
+                trackAction_PagosElectronicos();
+            }
+        }
+
+        $('input:radio[name=TipoDeOperador]').click(function () {
+            var tipoOperador = $('input:radio[name=TipoDeOperador]:checked').val();
+            if (tipoOperador === "Operador") {
+                document.getElementById("ci_operador").style.display = "block";
+            } else {
+                document.getElementById("ci_operador").style.display = "none";
+            }
+        });
+        $('input:radio[name=TipoDeOperadorResp]').click(function () {
+            var tipoOperador = $('input:radio[name=TipoDeOperadorResp]:checked').val();
+            if (tipoOperador === "Operador") {
+                document.getElementById("ci-operador-responsive").style.display = "block";
+            } else {
+                document.getElementById("ci-operador-responsive").style.display = "none";
+            }
+        });
+        /*****Rediseño - Inicio****/
+        //$(document).ready(function () {
+            
+        //    new ServicesCarousel();
+        //    new ResponsiveNavigation();
+        //    // Cerrar dropdown al presionar Escape
+        //    document.addEventListener('keydown', function (e) {
+        //        if (e.key === 'Escape' && isDropdownOpen) {
+        //            closeDropdown();
+        //        }
+        //    });
+
+        //    // Prevenir que el dropdown se cierre al hacer click dentro de él
+        //    document.getElementById('dropdownMenu').addEventListener('click', function (e) {
+        //        e.stopPropagation();
+        //    });
+
+        //    $('.div-tarjetas').hide();
+        //    $('.div-tarjetaOpt').hide();
+        //    //login
+        //    loginBtnDesktop = document.getElementById('loginBtnDesktop');
+        //    loginBtnMobile = document.getElementById('loginBtnMobile');
+        //    dropdown = document.getElementById('dropdownMenu');
+        //    overlay = document.getElementById('overlay');
+        //    // Event listeners para botones de login
+        //    if (loginBtnDesktop) {
+        //        loginBtnDesktop.addEventListener('click', function (e) {
+        //            e.preventDefault();
+        //            e.stopPropagation();
+        //            console.log('Desktop login clicked');
+        //            toggleDropdown();
+        //        });
+        //    }
+
+        //    if (loginBtnMobile) {
+        //        loginBtnMobile.addEventListener('click', function (e) {
+        //            e.preventDefault();
+        //            e.stopPropagation();
+        //            console.log('Mobile login clicked');
+        //            toggleDropdown();
+        //        });
+        //    }
+
+        //    // Cerrar al hacer click en overlay
+        //    if (overlay) {
+        //        overlay.addEventListener('click', closeDropdown);
+        //    }
+        //    // Cerrar con Escape
+        //    document.addEventListener('keydown', function (e) {
+        //        if (e.key === 'Escape' && isDropdownOpen) {
+        //            closeDropdown();
+        //        }
+        //    });
+
+        //    // Prevenir cierre al hacer click dentro del dropdown
+        //    if (dropdown) {
+        //        dropdown.addEventListener('click', function (e) {
+        //            e.stopPropagation();
+        //        });
+        //    }
+
+        //    // Reposicionar en resize
+        //    window.addEventListener('resize', () => {
+        //        if (isDropdownOpen) {
+        //            positionDropdown();
+        //        }
+        //    });
+        //    //login - fin
+
+        //});
+
+            /*****Rediseño - Fin *****/
+    </script>
+</header>
+
+    
+    
+    <div id="parcial" style=" box-sizing: inherit; ">
+        
+
+<!-- CONTENIDO --------------------------------------------------- -->
+<div id="secc_error">
+
+	<div class="wrap mb100">
+
+		<div class="error404 clearfix">
+
+			<h1 class="color1">P&aacute;gina no encontrada</h1>
+			<h5>Lo sentimos, la p&aacute;gina que est&aacute; intentando acceder no se encuentra,<br>compruebe su direcci&oacute;n URL.</h5>
+			<p>Algunas de las razones de esto pueden ser:</p>
+			<ul>
+				<li>Una direcci&oacute;n mal escrita;</li>
+				<li>Una p&aacute;gina que ya no existe;</li>
+				<li>Una p&aacute;gina que ha sido trasladada.</li>
+			</ul>
+			<p>Utilice el campo de b&uacute;squeda de arriba para encontrar lo que busca.</p>
+
+		</div>
+	</div>
+
+</div>
+<!-- FIN CONTENIDO --------------------------------------------------- -->
+
+    </div>
+    
+<script type="text/javascript" src="/Scripts/itau.footer.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //var callbacks = $.Callbacks();
+        //callbacks.add(consulta_paginas);
+        //callbacks.add(cierraSiteMap);
+        //callbacks.fire();
+        $('#footer-redes').attr('display', 'none');
+    });
+
+</script>
+<meta charset="utf-8">
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto mb-4">
+                <img src="/images/redis/logo_blanco.png" alt="Logo Banco Itaú" class="mb-3">
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Informaci&oacute;n al <br /> usuario</h5>
+                <a href="/Paginas/Politicas_de_privacidad">Pol&iacute;tica de privacidad</a>
+                <a href="/Paginas/Emergencias_bancarias">Emergencias bancarias</a>
+                <a href="/Paginas/SobreItau">Sobre Ita&uacute;</a>
+               
+                <a href="/Paginas/sobreitau_estadoscontables" title="Estados Contables Trimestrales">Estados Contables Trimestrales</a>                                                
+                <a href="/Paginas/Tarifario">Tarifario y Contratos</a>
+                <a href="/Content/archivos/Gobierno_Corporativo_2026.pdf" target="_blank">Informe de Gobierno Corporativo</a>
+                <a href="https://www.fundacionitau.com.py/">Fundación Itaú</a>
+                <a href="/TrabajaConNosotros">Trabajá con nosotros</a>
+                <a href="/Paginas/Seguridad">Más Seguridad</a>
+                
+                <a href="/Bienesenventa">Bienes en Venta</a>
+                <a href="/denuncias">Denuncias</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Contacto</h5>
+                <p>
+                    (+595) 21 617 1000
+                </p>
+
+                <div class="otros_paises">
+                    Ita&uacute; en otros pa&iacute;ses
+                    <div class="row banderas no-gutters">
+                        <div class="col-auto">
+                            <a href="https://www.itau.com.br/" onclick="customClick({description: 'BanderaBrasil(ItauEnOtrosPaises)'})" target="_blank">
+                                <img src="/Images/redis/brasil.png" class="img-ban" />
+                            </a>
+
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://banco.itau.cl/" onclick="customClick({description: 'BanderaChile(ItauEnOtrosPaises)'})" target="_blank">
+                                <img src="/Images/redis/chile.png" class="img-ban" />
+                            </a>
+
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://www.itau.com.uy/" onclick="customClick({description: 'BanderaUruguay(ItauEnOtrosPaises'})" target="_blank">
+                                <img src="/Images/redis/uruguay.png" class="img-ban" />
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5>Descarg&aacute; la app</h5>
+                <a class="btn btn-dark btn-app" onclick="customClick({description: 'AppStore(DescargaLaApp)'})" href="https://apps.apple.com/py/app/ita%C3%BA-paraguay/id475471433" target="_blank">
+                    App Store
+                    <img src="/images/redis/appstore.png" alt="App Store" class="mr-2">
+
+                </a>
+                <a class="btn btn-dark btn-app" onclick="customClick({description: 'GooglePlay(DescargaLaApp)'})" href="https://play.google.com/store/apps/details?id=py.com.itau.nmb.android" target="_blank">
+                    Google Play
+                    <img src="/images/redis/googleplay.png" alt="Google Play" class="mr-2">
+
+                </a>
+                <h5 class="mt-3">Redes sociales</h5>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/itauparaguay/" onclick="customClick({description: 'Instagram(RedesSociales)'})" target="_blank"><img src="/images/redis/instagram.png" alt="Instagram" style="width: 40px; height: 40px;"></a>
+                    <a href="http://twitter.com/ItauParaguay" onclick="customClick({description: 'Twitter(RedesSociales)'})" target="_blank"><img src="/images/redis/uea67-twitter_variant--twitter.svg" alt="Twitter" style="width: 20px; "></a>
+                    <a href="http://www.facebook.com/itauparaguay" onclick="customClick({description: 'Facebook(RedesSociales)'})" target="_blank"><img src="/images/redis/facebook.png" alt="Facebook" style="width: 40px; height: 40px;"></a>
+                    <a href="http://www.youtube.com/itauparaguay" onclick="customClick({description: 'YouTube(RedesSociales)'})" target="_blank"><img src="/images/redis/youtube.png" alt="YouTube" style="width: 40px; height: 40px;"></a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</footer>
+
+<footer id="footer_old" class="footer d-none">
+    <div class="container-fluid pt-2 pb-2">
+
+        <a href="#sitemap" class="btn_sitemap abrir d-none" id="btnSitemap" onclick="consulta_paginas()">Acceso r&aacute;pido</a>
+        <a href="#" class="btn_sitemap cerrar" id="btnSitemap" style="display: block;" onclick="cerrarBusqueda();">Volver arriba</a>
+
+
+    </div>
+    <!--sitemap-->
+    <div class=" sitemap " id="sitemap" style="">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-3 mx-auto">
+                    <h2 class="text-center mb-2">Ita&uacute; en un solo click</h2>
+                    <div class="input-group buscador-bottom pl-2">
+                        <input type="text" class="custom-file-input" placeholder="" id="txt_palabra" onkeyup="buscar_footer()">
+                        <button class="btn" type="button" id="btn_buscar_palabra" onclick="filtra(); return false;"><span class="material-icons md-20">search</span></button>
+                    </div>
+                </div>
+            </div>
+            <div id="grilla_resultados" class="row pb-5">
+                <div class="col-lg-3 grid_3">
+                    <h3>A</h3>
+                    <ul class="list-unstyled" id="ul_a"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>B</h3>
+                    <ul class="list-unstyled" id="ul_b"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>C</h3>
+                    <ul class="list-unstyled" id="ul_c"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>D</h3>
+                    <ul class="list-unstyled" id="ul_d"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>E</h3>
+                    <ul class="list-unstyled" id="ul_e"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>F</h3>
+                    <ul class="list-unstyled" id="ul_f"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>G</h3>
+                    <ul class="list-unstyled" id="ul_g"></ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>H</h3>
+                    <ul class="list-unstyled" id="ul_h"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>I</h3>
+                    <ul class="list-unstyled" id="ul_i"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>J</h3>
+                    <ul class="list-unstyled" id="ul_j"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>K</h3>
+                    <ul class="list-unstyled" id="ul_k"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>L</h3>
+                    <ul class="list-unstyled" id="ul_l"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>M</h3>
+                    <ul class="list-unstyled" id="ul_m"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>N</h3>
+                    <ul class="list-unstyled" id="ul_n"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>O</h3>
+                    <ul class="list-unstyled" id="ul_o"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>P</h3>
+                    <ul class="list-unstyled" id="ul_p"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>Q</h3>
+                    <ul class="list-unstyled" id="ul_q"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>R</h3>
+                    <ul class="list-unstyled" id="ul_r"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>S</h3>
+                    <ul class="list-unstyled" id="ul_s"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>T</h3>
+                    <ul class="list-unstyled" id="ul_t"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>U</h3>
+                    <ul class="list-unstyled" id="ul_u"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>V</h3>
+                    <ul class="list-unstyled" id="ul_v"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>W</h3>
+                    <ul class="list-unstyled" id="ul_w"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>X</h3>
+                    <ul class="list-unstyled" id="ul_x"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>Y</h3>
+                    <ul class="list-unstyled" id="ul_y"></ul>
+                </div>
+                <div class="col-lg-3 grid_3">
+                    <h3>Z</h3>
+                    <ul class="list-unstyled" id="ul_z"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sitemap-->
+</footer>
+
+    <!-- GTM - Data Layer -->
+    <script>
+        function gtmPush() {
+            realizarGtmPush = 'true';
+            page = new Page('/Paginas/error404.cshtml', '?aspxerrorpath=/Scripts/sc.js', '');
+            googleTagManagerPush(page, realizarGtmPush);
+        };
+        // Ejecutar función
+        gtmPush();
+    </script>
+    <!-- Google Tag Manager for itau.com.py -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-54FPVG"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-54FPVG');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿window.dataLayer = window.dataLayer || [];
+
+function sendAnalytics(eventName, params) {
+    window.analyticsData = {
+        event: eventName,
+        params: params || {}
+    };
+
+    window.dataLayer.push(window.analyticsData);
+}
+
+function customView(data) {
+    sendAnalytics("custom_view", {
+        view_name: data.view_name || "",
+        action: data.action || "Consultas",
+        area: "No logueado",
+        business: "UN",
+        channel: data.channel || "SitioPublico",
+        country: data.country || "PY",
+        environment: envAnalitics || "Prod",
+        family: "AreaComun",
+        subfamily: "Servicios",
+        techspec_id: "t319a307435444805969" 
+    });
+}
+
+function customClick(data) {
+    sendAnalytics("custom_click", {
+        interaction_action: "Click",
+        interaction_type: "Button",
+        interaction_description: data.description,
+        action: "Consultas",
+        area: "NoLogueado",
+        business: "UN",
+        channel: "SitioPublico",
+        country: "PY",
+        environment: envAnalitics || "Prod",
+        family: "AreaComun",
+        subfamily: "Servicios",
+        techspec_id: "t319a307435444805969" 
+       
+    });
+}

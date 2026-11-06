@@ -1,0 +1,212 @@
+﻿/**
+ * Banner principal
+ * */
+class BootstrapCarouselCustom {
+    constructor() {
+        this.carousel = $('#heroCarousel');
+        this.pagination = document.getElementById('pagination');
+        this.progressBar = document.getElementById('progressBar');
+        this.prevBtn = document.getElementById('prevBtn');
+        this.nextBtn = document.getElementById('nextBtn');
+
+        this.slides = this.carousel.find('.carousel-item');
+        this.totalSlides = this.slides.length;
+        this.currentSlide = 0;
+
+        this.init();
+    }
+
+    init() {
+        this.createPagination();
+        this.bindEvents();
+        this.updateControls();
+    }
+
+    createPagination() {
+        this.pagination.innerHTML = '';
+        for (let i = 0; i < this.totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'pagination-dot';
+            dot.addEventListener('click', () => this.goToSlide(i));
+            this.pagination.appendChild(dot);
+        }
+    }
+
+    bindEvents() {
+        // Botones de navegación personalizados
+        this.prevBtn.addEventListener('click', () => {
+            this.carousel.carousel('prev');
+        });
+
+        this.nextBtn.addEventListener('click', () => {
+            this.carousel.carousel('next');
+        });
+
+        // Eventos de Bootstrap Carousel para Bootstrap 4
+        this.carousel.on('slide.bs.carousel', (e) => {
+            this.currentSlide = $(e.relatedTarget).index();
+            this.updateControls();
+        });
+
+        // Soporte para teclado
+        $(document).on('keydown', (e) => {
+            if (e.key === 'ArrowLeft') this.carousel.carousel('prev');
+            if (e.key === 'ArrowRight') this.carousel.carousel('next');
+        });
+
+        // Pausar en hover
+        this.carousel.on('mouseenter', () => {
+            this.carousel.carousel('pause');
+        });
+
+        this.carousel.on('mouseleave', () => {
+            this.carousel.carousel('cycle');
+        });
+    }
+
+    goToSlide(index) {
+        this.carousel.carousel(index);
+    }
+
+    updateControls() {
+        // Actualizar paginación
+        const dots = this.pagination.querySelectorAll('.pagination-dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === this.currentSlide);
+        });
+
+        // Actualizar barra de progreso
+        const progress = ((this.currentSlide + 1) / this.totalSlides) * 100;
+        this.progressBar.style.width = `${progress}%`;
+    }
+}
+/**
+* Clase ServicesCarousel
+* Maneja la funcionalidad del carrusel de servicios
+*/
+class ServicesCarousel {
+    constructor() {
+        // Elementos del DOM
+        this.track = document.getElementById('servicesTrack');
+        this.prevBtn = document.getElementById('servicesPrevBtn');
+        this.nextBtn = document.getElementById('servicesNextBtn');
+        this.cards = document.querySelectorAll('.service-card-wrapper');
+
+        // Variables de estado
+        this.currentIndex = 0;
+        this.itemsVisible = this.getItemsVisible();
+        this.totalItems = this.cards.length;
+
+        // Inicializar carrusel
+        this.init();
+    }
+
+    /**
+     * Calcula cuántos elementos son visibles según el ancho de pantalla
+     * Desktop (>1024px): 6 elementos
+     * Tablet grande (769-1024px): 4 elementos
+     * Tablet (577-768px): 3 elementos
+     * Móvil (401-576px): 2 elementos
+     * Móvil pequeño (≤400px): 1 elemento
+     */
+    getItemsVisible() {
+        const width = window.innerWidth;
+        if (width <= 400) return 1;
+        if (width <= 576) return 2;
+        if (width <= 768) return 3;
+        if (width <= 1024) return 4;
+        return 6;
+    }
+
+    /**
+     * Inicializa el carrusel
+     * - Vincula eventos a los botones
+     * - Configura el listener de resize
+     * - Actualiza el estado inicial
+     */
+    init() {
+        // Event listeners para botones de navegación
+        this.prevBtn.addEventListener('click', () => this.prev());
+        this.nextBtn.addEventListener('click', () => this.next());
+
+        // Actualizar al cambiar tamaño de ventana
+        window.addEventListener('resize', () => {
+            this.itemsVisible = this.getItemsVisible();
+            this.updateCarousel();
+        });
+
+        // Estado inicial
+        this.updateCarousel();
+    }
+
+    /**
+     * Navega al elemento anterior
+     * Decrementa el índice actual si es posible
+     */
+    prev() {
+        if (this.currentIndex > 0) {
+            this.currentIndex--;
+            this.updateCarousel();
+        }
+    }
+
+    /**
+     * Navega al siguiente elemento
+     * Incrementa el índice actual si es posible
+     */
+    next() {
+        const maxIndex = this.totalItems - this.itemsVisible;
+        if (this.currentIndex < maxIndex) {
+            this.currentIndex++;
+            this.updateCarousel();
+        }
+    }
+
+    /**
+     * Actualiza la posición del carrusel y el estado de los botones
+     * - Calcula el desplazamiento necesario
+     * - Aplica la transformación CSS
+     * - Habilita/deshabilita botones según posición
+     */
+    updateCarousel() {
+        // Obtener ancho de una tarjeta + gap
+        const cardWidth = this.cards[0].offsetWidth;
+        const gap = 20; // Debe coincidir con el gap en CSS
+
+        // Calcular desplazamiento
+        const offset = -(this.currentIndex * (cardWidth + gap));
+
+        // Aplicar transformación
+        this.track.style.transform = `translateX(${offset}px)`;
+
+        // Actualizar estado de botones
+        this.updateButtons();
+    }
+
+    /**
+     * Actualiza el estado (habilitado/deshabilitado) de los botones
+     * - Deshabilita el botón prev si está en el inicio
+     * - Deshabilita el botón next si está en el final
+     */
+    updateButtons() {
+        const maxIndex = this.totalItems - this.itemsVisible;
+
+        // Deshabilitar botón anterior si estamos al inicio
+        this.prevBtn.disabled = this.currentIndex === 0;
+
+        // Deshabilitar botón siguiente si estamos al final
+        this.nextBtn.disabled = this.currentIndex >= maxIndex;
+    }
+}
+
+// ============================================
+// FIN CARRUSEL DE SERVICIOS
+// ============================================
+
+$(document).ready(function () {
+    // Inicializar carrusel de hero
+    new BootstrapCarouselCustom();
+
+    // Inicializar carrusel de servicios
+    new ServicesCarousel();
+});
